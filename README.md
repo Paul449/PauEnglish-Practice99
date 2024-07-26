@@ -12,7 +12,7 @@ The purpose of this personal project is to help me to practice my english skills
     6.- Deployment
     7.- Github
     8.- Portfolio
-    
+
 # Installation
 
     N/A
@@ -35,7 +35,7 @@ Render deployment:
 
 # Github
 
-Github Repository:
+Github Repository: https://github.com/Paul449/PauEnglish-Practice99?tab=readme-ov-file
 
 # Repository
 
