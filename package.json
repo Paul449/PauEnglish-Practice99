@@ -1,0 +1,19 @@
+{
+  "name": "pauenglish-practice99",
+  "version": "1.0.0",
+  "description": "Practice your english skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul449/PauEnglish-Practice99.git"
+  },
+  "author": "Paul Bilbatua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paul449/PauEnglish-Practice99/issues"
+  },
+  "homepage": "https://github.com/Paul449/PauEnglish-Practice99#readme"
+}
