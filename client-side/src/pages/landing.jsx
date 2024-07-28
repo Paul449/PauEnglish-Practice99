@@ -1,7 +1,4 @@
-
-
 function Landing(){
-
     return(
     <>
       <h1>PauEnglish</h1>
@@ -10,7 +7,7 @@ function Landing(){
         your English skills by discussing specific topics with an AI bot.
       </p>
       <p>Start Today</p>
-      <button>Speak with chatbot</button>
+      <a href="/topics" className="button">Speak with chatbot</a>
      </>
     )
 }

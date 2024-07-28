@@ -20,6 +20,9 @@ function Chat(){
             </ul>
         </div>
       </aside>
+      <section className="Chat-layout">
+
+      </section>
       <section id="PushToTalk">
         <button></button>
       </section>
