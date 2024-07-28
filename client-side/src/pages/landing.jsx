@@ -10,7 +10,7 @@ function Landing(){
         your English skills by discussing specific topics with an AI bot.
       </p>
       <p>Start Today</p>
-      <button >Speak with chatbot</button>
+      <button>Speak with chatbot</button>
      </>
     )
 }
