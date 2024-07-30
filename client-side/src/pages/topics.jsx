@@ -1,6 +1,9 @@
 
 import Interests from "../components/interests";
-function Topics(){
+import { useNavigate, useLocation} from 'react-router-dom'
+export default function Topics(){
+    let Location = useLocation();
+    let Navigate = useNavigate();
 return(
     <>
     <section>
@@ -8,10 +11,9 @@ return(
     <Interests/>
     </section>
     <section>
-        <button>Next</button>
+        <button onClick={()=>Navigate('/Timer')}>Next</button>
     </section>
     </>
 ) 
 }
 
-export default Topics;

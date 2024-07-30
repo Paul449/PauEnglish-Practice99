@@ -1,7 +1,6 @@
-import { useState } from "react";
+//import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Chat from'./Chat'
-function Timer(){
+export default function Timer(){
     const Location = useLocation();
     const Navigation = useNavigate();
     return(
@@ -23,4 +22,3 @@ function Timer(){
         </>
     )
 }
-export default Timer;

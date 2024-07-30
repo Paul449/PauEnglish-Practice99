@@ -1,6 +1,6 @@
 
 
-function InputBox(){
+export default function InputBox(){
 
     return(
         <>
@@ -8,4 +8,3 @@ function InputBox(){
         </>
     )
 }
-export default InputBox;

@@ -1,5 +1,5 @@
 
-function TalkButton(){
+export default function TalkButton(){
 
 return(
     <>
@@ -11,4 +11,3 @@ return(
     </>
 )  
 }
-export default TalkButton;

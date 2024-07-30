@@ -13,32 +13,36 @@ import Chat from './pages/Chat.jsx'
 import Topics from './pages/topics.jsx'
 import Timer from './pages/Timer.jsx'
 //router
-const Router = [{
+const Router = createBrowserRouter [{
   path: '/',
   element:<App/>,
   errorElement:<Error/>,
   children:[
     {
+      path:'/landing',
       index:true,
-      element:<Landing/>
+      element:<Landing />
     },
     {
+      path:'/Timer',
       index:true,
-      element:<Timer/>
+      element:<Timer />
     },
     {
+      path:'/Chat',
       index:true,
-      element:<Chat/>
+      element:<Chat />
     },
     {
+      path:'/Topics',
       index:true,
-      element:<Topics/>
+      element:<Topics />
     }
   ]
 }]
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={Router} />
+    <RouterProvider router={Router}/>
   </React.StrictMode>,
 )

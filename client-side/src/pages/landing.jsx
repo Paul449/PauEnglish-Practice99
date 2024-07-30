@@ -1,7 +1,5 @@
-import {useLocation, useNavigate} from 'react-router-dom'
-import Topics from './topics';
-function Landing(){
-    const Location = useLocation();
+import { useNavigate } from 'react-router-dom'
+export default function Landing(){
     const Navigation = useNavigate();
     return(
     <>
@@ -11,8 +9,7 @@ function Landing(){
         your English skills by discussing specific topics with an AI bot.
       </p>
       <p>Start Today</p>
-      <button onClick={()=>Navigation('/topics')}>Speak with chatbot</button>
+      <button onClick={()=>Navigation('/Topics')}>Speak with chatbot</button>
      </>
     )
 }
-export default Landing;

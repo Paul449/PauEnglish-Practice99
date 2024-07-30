@@ -1,5 +1,5 @@
 
-function Interests(){
+export default function Interests(){
     return(
         <>
         <section className="topics">
@@ -109,4 +109,3 @@ function Interests(){
         </>
     ) 
 }
-export default Interests;

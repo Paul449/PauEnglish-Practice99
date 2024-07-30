@@ -1,6 +1,6 @@
 
 
-function Feedback(){
+export default function Feedback(){
     return(
         <>
         <div className="feedback">
@@ -11,4 +11,3 @@ function Feedback(){
         </>
     )
 }
-export default Feedback;

@@ -1,6 +1,6 @@
 
 
-function Chat(){
+export default function Chat(){
     return(
     <>
       <header>
@@ -31,4 +31,3 @@ function Chat(){
     )
 }
 
-export default Chat;

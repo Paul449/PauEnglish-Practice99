@@ -1,12 +1,15 @@
+import {useRouteError} from 'react-router-dom';
 
-
-function Error(){
-return(
+export default  function ErrorElement(){
+   const Error = useRouteError();
+   console.error(Error);
+   return(
     <>
-    <div className="Error">
-    <h1>Error: Something unexpectedly happened, Please try again later!!!</h1>
-    </div>
+        <div id='error'>
+            <p>Something went wrong, please try again later!!!</p>
+            <p><i>{Error.message}</i></p>
+        </div>
     </>
-)   
+   )
 }
-export default Error;
+
