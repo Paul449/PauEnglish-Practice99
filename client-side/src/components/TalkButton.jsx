@@ -1,4 +1,4 @@
-
+/*
 export default function TalkButton(){
 
 return(
@@ -11,3 +11,4 @@ return(
     </>
 )  
 }
+*/

@@ -1,4 +1,4 @@
-
+/*
 export default function LandingBtn(){
     return(
         <>
@@ -6,3 +6,4 @@ export default function LandingBtn(){
         </>
     )
 }
+*/

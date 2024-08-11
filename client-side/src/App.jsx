@@ -1,6 +1,5 @@
-import { Outlet } from 'react-router-dom';
-import './index.css'
-function App() {
+import { Outlet } from 'react-router-dom';// child routes in the front end
+export default function App() {
   return (
     <>
    <main>
@@ -10,4 +9,3 @@ function App() {
   )
 }
 
-export default App

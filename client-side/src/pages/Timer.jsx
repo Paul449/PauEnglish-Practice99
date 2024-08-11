@@ -1,8 +1,5 @@
 //import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 export default function Timer(){
-    const Location = useLocation();
-    const Navigation = useNavigate();
     return(
         <>
         <h1>Step 2: SetTimer</h1>
@@ -18,7 +15,7 @@ export default function Timer(){
             </div>
         </form>
         <p>Up to 60 Minutes</p>
-        <button onClick={()=>Navigation('/Chat')}>Start Now</button>
+        <button>Start Now</button>
         </>
     )
 }

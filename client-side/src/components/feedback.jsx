@@ -1,5 +1,5 @@
 
-
+/*
 export default function Feedback(){
     return(
         <>
@@ -11,3 +11,4 @@ export default function Feedback(){
         </>
     )
 }
+*/

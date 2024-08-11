@@ -1,5 +1,5 @@
 
-
+/*
 export default function InputBox(){
 
     return(
@@ -8,3 +8,4 @@ export default function InputBox(){
         </>
     )
 }
+    */

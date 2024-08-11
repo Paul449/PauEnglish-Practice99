@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom/client'
 import{
   createBrowserRouter,
@@ -7,42 +7,43 @@ import{
 import App from './App.jsx'
 import './index.css'
 //import pages
-import Error from './pages/Error.jsx'
+import ErrorElement from './pages/Error.jsx'
 import Landing from './pages/landing.jsx'
 import Chat from './pages/Chat.jsx'
 import Topics from './pages/topics.jsx'
 import Timer from './pages/Timer.jsx'
 //router
-const Router = createBrowserRouter [{
-  path: '/',
-  element:<App/>,
-  errorElement:<Error/>,
-  children:[
+//BrowserRouter: is a react tool to manage routing to different react components
+const Router = createBrowserRouter ([{
+  path: '/',     //our root path
+  element:<App />, //main element where the app will be running
+  errorElement:<ErrorElement />, //indicates an error in our pages or components
+  children:[ //child routes, which are my pages defined in the app
     {
-      path:'/landing',
-      index:true,
-      element:<Landing />
+      path:'/Landing',  //indicating this will be the landing page or the first page visible in my app
+      index:true, //only applies for one child route element
+      element:<Landing /> //define landing page; child element
     },
     {
       path:'/Timer',
-      index:true,
       element:<Timer />
     },
     {
       path:'/Chat',
-      index:true,
       element:<Chat />
     },
     {
       path:'/Topics',
-      index:true,
       element:<Topics />
     }
   ]
-}]
-
+}]);
+/*
+React.StrictMode: Is a tool used in react to indicate problems during developing or running the react application
+RouterProvider: It provides routes to different components in our Application
+*/
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={Router}/>
-  </React.StrictMode>,
+    <RouterProvider router={Router} /> 
+    </React.StrictMode>                              
 )

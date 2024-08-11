@@ -1,4 +1,4 @@
-
+/*
 export default function Interests(){
     return(
         <>
@@ -109,3 +109,4 @@ export default function Interests(){
         </>
     ) 
 }
+*/
