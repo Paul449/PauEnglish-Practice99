@@ -14,13 +14,15 @@ import Topics from './pages/topics.jsx'
 import Timer from './pages/Timer.jsx'
 //router
 //BrowserRouter: is a react tool to manage routing to different react components
-const Router = createBrowserRouter ([{
+const Router = createBrowserRouter(
+  [
+    {
   path: '/',     //our root path
   element:<App />, //main element where the app will be running
   errorElement:<ErrorElement />, //indicates an error in our pages or components
   children:[ //child routes, which are my pages defined in the app
     {
-      path:'/Landing',  //indicating this will be the landing page or the first page visible in my app
+      // do not specify path for landig page because react is not going to know which to render first
       index:true, //only applies for one child route element
       element:<Landing /> //define landing page; child element
     },

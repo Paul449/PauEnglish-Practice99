@@ -1,12 +1,328 @@
 /*PAGES*/
 body{
-    background-color: blue;
+    background: linear-gradient(90deg,#e66465, #9198e5);
     color:'white';
 }
+/*main*/
+main{
+    display: inline-grid;
+    justify-content: center;
+}
 /*Landing Page*/
-
+.landing{
+    display: inline-grid;
+    color: white;
+    align-content: center;
+    background-color: red;
+}
+.landing, button{
+    display: inline-block;
+}
 /*Topics*/
+.Container-T{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    left: 100%;
+    top: 50%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic-select{
+    margin-bottom: 9%;
+}
+.topics{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 55px;
+}
+.Music{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Art{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Travel{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.SocialMedia{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-right: 15%;
+}
+.History{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Hobbies{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Sports{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Interview{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Geography{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
 
+}
+.Food{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Dating{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+.Dancing{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Museum{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Plants{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Gym{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Hiking{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Acting{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Painting{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Running{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.MartialArts{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Coffee{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Cooking{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Photography{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+.Coding{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+.Cars{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+.Festivals{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+.Podcasts{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+.Meditation{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+.Videogames{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+.Other{
+    color: black;
+    border-radius: 35%;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 5%;
+}
+#Next{
+    display: inline-grid; 
+}
 /*Chat*/
 
 /*Error*/

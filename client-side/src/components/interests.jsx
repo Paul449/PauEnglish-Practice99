@@ -1,4 +1,4 @@
-/*
+
 export default function Interests(){
     return(
         <>
@@ -105,8 +105,8 @@ export default function Interests(){
             <p>Other</p>
         </div>
         </div>
+        <button id="Next">Next</button>
     </section>
         </>
     ) 
 }
-*/
