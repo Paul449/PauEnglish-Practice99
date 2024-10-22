@@ -105,7 +105,7 @@ export default function Interests(){
             <p>Other</p>
         </div>
         </div>
-        <button id="Next">Next</button>
+        <button id="Next" type="button"><a href="./Timer">Next</a></button>
     </section>
         </>
     ) 

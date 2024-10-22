@@ -15,7 +15,7 @@ export default function Timer(){
             </div>
         </form>
         <p>Up to 60 Minutes</p>
-        <button>Start Now</button>
+        <button><a href="./chat">Start Now</a></button>
         </>
     )
 }
