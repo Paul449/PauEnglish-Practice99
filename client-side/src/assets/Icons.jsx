@@ -1,23 +1,80 @@
-import * as React from "react";
+
 // export Music icon
+function MusicIcon(props){
+
+}
 // export Art Icon
+function ArtIcon(props){
+
+}
 // export Travel Icon
+function TravelIcon(props){
+
+}
 // export Social Media Icon
+function SMIcon(props){
+
+}
 // export History Icon
+function HistoryIcon(props){
+
+}
 // export Hobbies Icon
+function HobbiesIcon(props){
+
+}
 // export Sports Icon
+function SportsIcon(props){
+
+}
 // export Interview Icon
+function InterviewIcon(props){
+
+}
 // export Geography Icon
+function GeographyIcon(props){
+
+}
 // export Food Icon
+function FoodIcon(props){
+
+}
 // export Dating Icon
+function DatingIcon(props){
+
+}
 // export Dancing Icon
+function DancingIcon(props){
+
+}
 // export Museum Icon
+function MuseumIcon(props){
+
+}
 // export Plants Icon
+function PlantsIcon(props){
+
+}
 // export Gym Icon
+function GymIcon(props){
+
+}
 // export Hiking Icon
+function HikingIcon(props){
+
+}
 // export Acting Icon
+function ActingIcon(props){
+
+}
 // export Painting Icon
+function PaintingIcon(props){
+
+}
 // export Running Icon
+function RunningIcon(props){
+
+}
 // export martial arts icon
 function IconMixedMartialArts(props) {
   return (
@@ -35,10 +92,34 @@ function IconMixedMartialArts(props) {
 
 export default IconMixedMartialArts;
 // export Coffee Icon
+function CoffeeIcon(props){
+
+}
 // export Cooking Icon
+function CookingIcon(props){
+
+}
 // export Cars Icon
+function CarIcon(props){
+
+}
 // export Festivals Icon
+function FestivalIcon(props){
+
+}
 // export Podcasts Icon
+function PodcastIcon(props){
+
+}
 // export Meditation Icon
+function MeditationIcon(props){
+
+}
 // export Videogames Icon
+function VGIcon(props){
+
+}
 // export Other Icon
+function OtherIcon(props){
+
+}
