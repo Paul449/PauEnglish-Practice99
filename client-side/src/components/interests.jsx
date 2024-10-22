@@ -1,4 +1,5 @@
-
+/*Icons */
+import IconMixedMartialArts from '../assets/Icons';
 export default function Interests(){
     return(
         <>
@@ -69,6 +70,7 @@ export default function Interests(){
         </div>
         <div className="MartialArts">
             <p>Martial Arts</p>
+            <img src={IconMixedMartialArts}></img>
         </div>
         </div>
         <div className="column5">
@@ -105,7 +107,7 @@ export default function Interests(){
             <p>Other</p>
         </div>
         </div>
-        <button id="Next" type="button"><a href="./Timer">Next</a></button>
+        <button id="Next"><a href="./Timer">Next</a></button>
     </section>
         </>
     ) 

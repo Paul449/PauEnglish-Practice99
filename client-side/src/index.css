@@ -36,8 +36,9 @@ main{
 }
 .topics{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    column-gap: 55px;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    column-gap: 15px;
+    align-content: center;
 }
 .Music{
     color: black;
@@ -75,6 +76,7 @@ main{
     background-color: white;
     margin-bottom: 15px;
     text-align: center;
+    padding-left: 15%;
     padding-right: 15%;
 }
 .History{
@@ -323,6 +325,8 @@ main{
 #Next{
     display: inline-grid; 
 }
+/*Timer*/
+
 /*Chat*/
 
 /*Error*/
