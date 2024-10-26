@@ -12,7 +12,7 @@ export default function Landing(){
         your English skills by discussing specific topics with an AI bot.
       </p>
       <p>Start Today</p>
-      <button onClick={()=>{navigate("./topics")}}>Speak with chatbot</button>
+      <button onClick={()=>{console.log("...redirect"); navigate("./Topics")}}>Speak with chatbot</button>
       </div>
      </>
     )

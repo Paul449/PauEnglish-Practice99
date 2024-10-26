@@ -19,7 +19,7 @@ export default function Timer(){
             </div>
         </form>
         <p>Up to 60 Minutes</p>
-        <button onClick={()=>{Navigate("./Chat")}}>Start Now</button>
+        <button onClick={()=>{Navigate("/Chat")}}>Start Now</button>
         </>
     )
 }
