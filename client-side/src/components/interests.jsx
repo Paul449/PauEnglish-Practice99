@@ -1,5 +1,8 @@
 /*Icons */
+import MusicIcon from '../assets/MusicIcon';
+import ArtIcon from '../assets/ArtIcon';
 import MartialArtIcon from '../assets/MartialArtIcon';
+import TravelIcon from '../assets/TravelIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
@@ -11,12 +14,15 @@ export default function Interests(){
         <div className="column1">
         <div className="Music">
             <p>Music</p>
+            <MusicIcon/>
         </div>
         <div className="Art">
             <p>Art</p>
+            <ArtIcon/>
         </div>
         <div className="Travel">
             <p>Travel</p>
+            <TravelIcon/>
         </div>
         <div className="SocialMedia">
             <p>Social Media</p>

@@ -41,6 +41,9 @@ main{
     align-content: center;
 }
 .Music{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 13px;
     color: black;
     border-radius: 35%;
     background-color: white;
@@ -51,6 +54,9 @@ main{
     padding-right: 15%;
 }
 .Art{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 13px;
     color: black;
     border-radius: 35%;
     background-color: white;
@@ -61,6 +67,9 @@ main{
     padding-right: 15%;
 }
 .Travel{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 13px;
     color: black;
     border-radius: 35%;
     background-color: white;
