@@ -3,6 +3,7 @@ import MusicIcon from '../assets/MusicIcon';
 import ArtIcon from '../assets/ArtIcon';
 import MartialArtIcon from '../assets/MartialArtIcon';
 import TravelIcon from '../assets/TravelIcon';
+import SocialMedia from '../assets/SMIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
@@ -26,6 +27,7 @@ export default function Interests(){
         </div>
         <div className="SocialMedia">
             <p>Social Media</p>
+            <SocialMedia/>
         </div>
         <div className="History">
             <p>History</p>

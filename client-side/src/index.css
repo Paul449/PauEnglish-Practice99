@@ -80,6 +80,9 @@ main{
     padding-right: 15%;
 }
 .SocialMedia{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 13px;
     color: black;
     border-radius: 35%;
     background-color: white;
