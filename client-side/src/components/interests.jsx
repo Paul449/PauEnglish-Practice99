@@ -1,5 +1,5 @@
 /*Icons */
-import IconMixedMartialArts from '../assets/MartialArtIcon';
+import MartialArtIcon from '../assets/MartialArtIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
@@ -74,7 +74,7 @@ export default function Interests(){
         </div>
         <div className="MartialArts">
             <p>Martial Arts</p>
-            <img src={IconMixedMartialArts}></img>
+            <MartialArtIcon/>
         </div>
         </div>
         <div className="column5">
