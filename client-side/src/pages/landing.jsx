@@ -1,5 +1,8 @@
 
+import {useNavigate, useLocation} from 'react-router-dom';
 export default function Landing(){
+    const navigate = useNavigate();
+    const location = useLocation();
     return(
     <>
     <div className="landing">
@@ -9,7 +12,7 @@ export default function Landing(){
         your English skills by discussing specific topics with an AI bot.
       </p>
       <p>Start Today</p>
-      <button><a href="./topics">Speak with chatbot</a></button>
+      <button onClick={()=>{navigate("./topics")}}>Speak with chatbot</button>
       </div>
      </>
     )

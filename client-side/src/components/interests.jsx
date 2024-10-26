@@ -1,6 +1,10 @@
 /*Icons */
-import IconMixedMartialArts from '../assets/Icons';
+import IconMixedMartialArts from '../assets/MartialArtIcon';
+/*useNavigation and useLocation to know current location and navigate to other pages on my application */
+import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
+    let Navigate = useNavigate();
+    let Location = useLocation();
     return(
         <>
         <section className="topics">
@@ -107,7 +111,7 @@ export default function Interests(){
             <p>Other</p>
         </div>
         </div>
-        <button id="Next"><a href="./Timer">Next</a></button>
+        <button id="Next" onClick={()=>{Navigate("../Timer")}}>Next</button>
     </section>
         </>
     ) 
