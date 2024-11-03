@@ -4,6 +4,7 @@ import ArtIcon from '../assets/ArtIcon';
 import MartialArtIcon from '../assets/MartialArtIcon';
 import TravelIcon from '../assets/TravelIcon';
 import SocialMedia from '../assets/SMIcon';
+import History from '../assets/HistoryIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
@@ -31,6 +32,7 @@ export default function Interests(){
         </div>
         <div className="History">
             <p>History</p>
+            <History/>
         </div>
         </div>
         <div className="column2">

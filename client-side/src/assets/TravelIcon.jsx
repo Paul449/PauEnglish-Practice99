@@ -1,7 +1,7 @@
 // export travel icon
 function TravelIcon(){
     return(<>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35px" width="35px" version="1.1" id="Layer_1" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" height="35px" width="35px" version="1.1" id="Layer_1" viewBox="0 0 100 100" enableBackground="new 0 0 100 100" xmlSpace="preserve">
 <g>
 	<path fill="#F0566F" d="M77.855,5.509h-55.71c-5.506,0-9.969,4.463-9.969,9.968v59.901c0,5.505,4.463,9.968,9.969,9.968h55.71   c5.506,0,9.969-4.463,9.969-9.968V15.477C87.824,9.972,83.361,5.509,77.855,5.509z"/>
 	<path fill="#FEE36F" d="M8.893,24.468c-1.871,0-3.387,1.516-3.387,3.387v11.696c0,1.871,1.517,3.387,3.387,3.387h3.283V24.468   H8.893z"/>
