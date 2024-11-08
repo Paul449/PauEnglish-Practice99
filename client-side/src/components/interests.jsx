@@ -1,10 +1,12 @@
 /*Icons */
 import MusicIcon from '../assets/MusicIcon';
-import ArtIcon from '../assets/ArtIcon';
 import MartialArtIcon from '../assets/MartialArtIcon';
 import TravelIcon from '../assets/TravelIcon';
 import SocialMedia from '../assets/SMIcon';
-import History from '../assets/HistoryIcon';
+import SportIcon from '../assets/SportsIcon';
+import HistoryIcon from '../assets/HistoryIcon';
+import ArtIcon from '../assets/ArtIcon';
+import InterviewIcon from '../assets/InterviewIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
@@ -32,7 +34,7 @@ export default function Interests(){
         </div>
         <div className="History">
             <p>History</p>
-            <History/>
+            <HistoryIcon/>
         </div>
         </div>
         <div className="column2">
@@ -41,9 +43,11 @@ export default function Interests(){
         </div>
         <div className="Sports">
             <p>Sports</p>
+            <SportIcon/>
         </div>
         <div className="Interview">
             <p>Interview</p>
+            <InterviewIcon/>
         </div>
         <div className="Geography">
             <p>Geography</p>

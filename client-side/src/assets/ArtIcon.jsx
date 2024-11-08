@@ -1,11 +1,66 @@
 //Export Art Icon
-
 function ArtIcon(){
     return(<>
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 48 48">
-<linearGradient id="1SXCtb4sW6M13flTzXHDta_rufzEhS2OFRa_gr1" x1="10.645" x2="38.25" y1="11.8" y2="36.027" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3bc9f3"></stop><stop offset=".243" stop-color="#37c3f0"></stop><stop offset=".584" stop-color="#2ab0e7"></stop><stop offset=".979" stop-color="#1693d9"></stop><stop offset="1" stop-color="#1591d8"></stop></linearGradient><path fill="url(#1SXCtb4sW6M13flTzXHDta_rufzEhS2OFRa_gr1)" d="M28,4C12,4,4,18.559,4,28c0,8.182,3,10,5.23,10c4.3,0,6.335-7,9.77-7c1.533,0,3,1.076,3,3	c0,2.671-3,2.753-3,6.389C19,41.72,20.37,44,23.332,44C31.792,44,44,34,44,20.5C44,8.145,35,4,28,4z M25.5,29	c-1.381,0-2.5-1.119-2.5-2.5s1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5S26.881,29,25.5,29z"></path><path d="M38.429,35.535L39,25v-2.741l2.308-4.161c0.361-0.653,0.352-1.428-0.027-2.071	C40.901,15.384,40.229,15,39.482,15h-7.965c-0.746,0-1.419,0.384-1.798,1.027c-0.379,0.643-0.389,1.417-0.027,2.071L32,22.259	l0.002,2.795l0.845,15.588C34.851,39.289,36.767,37.564,38.429,35.535z" opacity=".05"></path><path d="M30.619,16.014c-0.604,0.322-0.87,1.153-0.489,1.842l2.37,4.273l0.001,2.898l0.828,15.272	c1.624-1.141,3.18-2.539,4.567-4.153L38.5,25v-2.871l2.37-4.274c0.381-0.689,0.115-1.521-0.489-1.842	c-0.189-0.322-1.229-0.514-1.602-0.514h-6.554C31.852,15.5,30.808,15.692,30.619,16.014z" opacity=".07"></path><radialGradient id="1SXCtb4sW6M13flTzXHDtb_rufzEhS2OFRa_gr2" cx="15.5" cy="17.5" r="4.5" gradientUnits="userSpaceOnUse"><stop offset="0"></stop><stop offset="1" stop-opacity="0"></stop></radialGradient><circle cx="15.5" cy="17.5" r="4.5" fill="url(#1SXCtb4sW6M13flTzXHDtb_rufzEhS2OFRa_gr2)" opacity=".15"></circle><radialGradient id="1SXCtb4sW6M13flTzXHDtc_rufzEhS2OFRa_gr3" cx="10.5" cy="26.5" r="4.5" gradientUnits="userSpaceOnUse"><stop offset="0"></stop><stop offset="1" stop-opacity="0"></stop></radialGradient><circle cx="10.5" cy="26.5" r="4.5" fill="url(#1SXCtb4sW6M13flTzXHDtc_rufzEhS2OFRa_gr3)" opacity=".15"></circle><radialGradient id="1SXCtb4sW6M13flTzXHDtd_rufzEhS2OFRa_gr4" cx="13.51" cy="13.722" r="6.873" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e85182"></stop><stop offset="1" stop-color="#d03767"></stop></radialGradient><circle cx="15.5" cy="16.5" r="3.5" fill="url(#1SXCtb4sW6M13flTzXHDtd_rufzEhS2OFRa_gr4)"></circle><radialGradient id="1SXCtb4sW6M13flTzXHDte_rufzEhS2OFRa_gr5" cx="24.5" cy="12.5" r="4.5" gradientUnits="userSpaceOnUse"><stop offset="0"></stop><stop offset="1" stop-opacity="0"></stop></radialGradient><circle cx="24.5" cy="12.5" r="4.5" fill="url(#1SXCtb4sW6M13flTzXHDte_rufzEhS2OFRa_gr5)" opacity=".15"></circle><radialGradient id="1SXCtb4sW6M13flTzXHDtf_rufzEhS2OFRa_gr6" cx="22.715" cy="8.859" r="6.758" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#835fc1"></stop><stop offset="1" stop-color="#634796"></stop></radialGradient><circle cx="24.5" cy="11.5" r="3.5" fill="url(#1SXCtb4sW6M13flTzXHDtf_rufzEhS2OFRa_gr6)"></circle><radialGradient id="1SXCtb4sW6M13flTzXHDtg_rufzEhS2OFRa_gr7" cx="8.46" cy="22.546" r="6.755" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fee100"></stop><stop offset="1" stop-color="#f7a511"></stop></radialGradient><circle cx="10.5" cy="25.5" r="3.5" fill="url(#1SXCtb4sW6M13flTzXHDtg_rufzEhS2OFRa_gr7)"></circle><linearGradient id="1SXCtb4sW6M13flTzXHDth_rufzEhS2OFRa_gr8" x1="33" x2="38" y1="23.5" y2="23.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b0b0b0"></stop><stop offset="1" stop-color="#a1a1a1"></stop></linearGradient><rect width="5" height="3" x="33" y="22" fill="url(#1SXCtb4sW6M13flTzXHDth_rufzEhS2OFRa_gr8)"></rect><linearGradient id="1SXCtb4sW6M13flTzXHDti_rufzEhS2OFRa_gr9" x1="35.5" x2="35.5" y1="45.645" y2="25.176" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4a4a4a"></stop><stop offset=".659" stop-color="#323232"></stop><stop offset="1" stop-color="#232323"></stop></linearGradient><path fill="url(#1SXCtb4sW6M13flTzXHDti_rufzEhS2OFRa_gr9)" d="M35.5,46L35.5,46c-0.763,0-1.393-0.597-1.435-1.359L33,25h5l-1.065,19.641	C36.893,45.403,36.263,46,35.5,46z"></path><path fill="#f6f6f6" d="M38,22h-5l-2.433-4.386C30.166,16.889,30.69,16,31.518,16h7.965c0.828,0,1.352,0.889,0.95,1.614	L38,22z"></path>
-</svg>
+         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" height='35px' width='35px'>
+    <defs>
+      <linearGradient id="b" x1="32" y1="52.19" x2="32" y2="11" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stopColor="#54a5ff" />
+        <stop offset="1" stopColor="#8ad3fe" />
+      </linearGradient>
+      <linearGradient id="a" x1="18.27" y1="41.92" x2="26.08" y2="41.92" gradientTransform="rotate(40.81 22.175 41.923)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stopColor="#fe9661" />
+        <stop offset="1" stopColor="#ffb369" />
+      </linearGradient>
+      <linearGradient id="c" x1="11.78" y1="30.92" x2="18.57" y2="30.92" gradientTransform="rotate(85.81 15.177 30.915)" xlinkHref="#a" />
+      <linearGradient id="d" x1="18.82" y1="20.92" x2="27.53" y2="20.92" gradientTransform="rotate(22.38 23.18 20.917)" xlinkHref="#a" />
+      <linearGradient id="e" x1="31.67" y1="18.92" x2="40.67" y2="18.92" xlinkHref="#a" />
+      <linearGradient id="f" x1="49" y1="46" x2="49" y2="7" xlinkHref="#a" />
+    </defs>
+    <path
+      d="M32 11C18.19 11 7 20.4 7 32c0 9.32 7.23 17.22 17.23 20A6.12 6.12 0 0 0 32 46.1a6.1 6.1 0 0 1 6.1-6.1h12.65a6 6 0 0 0 6-4.85C59.06 21.77 46.57 11 32 11zm5.5 25a4.5 4.5 0 1 1 4.5-4.5 4.49 4.49 0 0 1-4.5 4.5z"
+      style={{ fill: 'url(#b)' }}
+    />
+    <ellipse
+      cx="22.17"
+      cy="41.92"
+      rx="3.39"
+      ry="4.5"
+      transform="rotate(-40.81 22.172 41.91)"
+      style={{ fill: 'url(#a)' }}
+    />
+    <ellipse
+      cx="15.17"
+      cy="30.92"
+      rx="4.5"
+      ry="3.39"
+      transform="rotate(-85.81 15.173 30.917)"
+      style={{ fill: 'url(#c)' }}
+    />
+    <ellipse
+      cx="23.17"
+      cy="20.92"
+      rx="4.5"
+      ry="3.39"
+      transform="rotate(-22.38 23.176 20.921)"
+      style={{ fill: 'url(#d)' }}
+    />
+    <ellipse
+      cx="36.17"
+      cy="18.92"
+      rx="4.5"
+      ry="3.39"
+      style={{ fill: 'url(#e)' }}
+    />
+    <path
+      d="M49.08 46A2.93 2.93 0 0 1 46 42.92L47.94 8a1.06 1.06 0 0 1 2.12 0L52 42.92A2.92 2.92 0 0 1 49.08 46z"
+      style={{ fill: 'url(#f)' }}
+    />
+    <path
+      d="M53 50c0 2.21-2 7-5 7 0-4-3-4.58-3-7a4 4 0 0 1 8 0z"
+      style={{ fill: '#eb7f58' }}
+    />
+  </svg>
+    
     </>)
 }
-
 export default ArtIcon;
