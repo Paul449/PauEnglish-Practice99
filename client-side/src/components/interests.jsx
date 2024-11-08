@@ -7,6 +7,12 @@ import SportIcon from '../assets/SportsIcon';
 import HistoryIcon from '../assets/HistoryIcon';
 import ArtIcon from '../assets/ArtIcon';
 import InterviewIcon from '../assets/InterviewIcon';
+import GeoIcon from '../assets/GeoIcon';
+import DatingIcon from '../assets/DatingIcon';
+import DancingIcon from '../assets/dancing';
+import MuseumIcon from '../assets/MuseumIcon';
+import PlantIcon from '../assets/PlantsIcon';
+import GymIcon from '../assets/GymIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
@@ -51,6 +57,7 @@ export default function Interests(){
         </div>
         <div className="Geography">
             <p>Geography</p>
+            <GeoIcon/>
         </div>
         <div className="Food">
             <p>Food</p>
@@ -59,18 +66,23 @@ export default function Interests(){
         <div className="column3">
         <div className="Dating">
             <p>Dating</p>
+            <DatingIcon/>
         </div>
         <div className="Dancing">
             <p>Dancing</p>
+            <DancingIcon/>
         </div>
         <div className="Museum">
             <p>Museum</p>
+            <MuseumIcon/>
         </div>
         <div className="Plants">
             <p>Plants</p>
+            <PlantIcon/>
         </div>
         <div className="Gym">
             <p>Gym</p>
+            <GymIcon />
         </div>
         </div>
         <div className="column4">
