@@ -13,6 +13,21 @@ import DancingIcon from '../assets/dancing';
 import MuseumIcon from '../assets/MuseumIcon';
 import PlantIcon from '../assets/PlantsIcon';
 import GymIcon from '../assets/GymIcon';
+import HikingIcon from '../assets/HikingIcon';
+//import ActingIcon from '../assets/ActingIcon';
+import PaintingIcon from '../assets/PaintingIcon';
+import FoodIcon from '../assets/FoodIcon';
+import RunningIcon from '../assets/RunningIcon';
+import CoffeeIcon from '../assets/CoffeeIcon';
+import CookingIcon from '../assets/CookingIcon';
+import PhotographyIcon from '../assets/PhotographyIcon';
+import CodingIcon from '../assets/CodingIcon';
+import CarIcon from '../assets/CarsIcon';
+import FestivalIcon from '../assets/FestivalsIcon';
+import PodcastIcon from '../assets/PodcastIcon';
+import MeditationIcon from '../assets/MeditationIcon';
+import VGIcon from '../assets/VGIcon';
+import Other from '../assets/OtherIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
 export default function Interests(){
@@ -61,6 +76,7 @@ export default function Interests(){
         </div>
         <div className="Food">
             <p>Food</p>
+            <FoodIcon/>
         </div>
         </div>
         <div className="column3">
@@ -82,21 +98,25 @@ export default function Interests(){
         </div>
         <div className="Gym">
             <p>Gym</p>
-            <GymIcon />
+            <GymIcon/>
         </div>
         </div>
         <div className="column4">
         <div className="Hiking">
             <p>Hiking</p>
+            <HikingIcon/>
         </div>
         <div className="Acting">
             <p>Acting</p>
+            
         </div>
         <div className="Painting">
             <p>Painting</p>
+            <PaintingIcon/>
         </div>
         <div className="Running">
             <p>Running</p>
+            <RunningIcon/>
         </div>
         <div className="MartialArts">
             <p>Martial Arts</p>
@@ -106,35 +126,45 @@ export default function Interests(){
         <div className="column5">
         <div className="Coffee">
             <p>Coffee</p>
+            <CoffeeIcon/>
         </div>
         <div className="Cooking">
             <p>Cooking</p>
+            <CookingIcon/>
         </div>
         <div className="Photography">
             <p>Photography</p>
+            <PhotographyIcon/>
         </div>
         <div className="Coding">
             <p>Coding</p>
+            <CodingIcon/>
         </div>
         <div className="Cars">
             <p>Cars</p>
+            <CarIcon/>
         </div>
         </div>
         <div className="column6">
         <div className="Festivals">
             <p>Festivals</p>
+            <FestivalIcon/>
         </div>
         <div className="Podcasts">
             <p>Podcasts</p>
+            <PodcastIcon/>
         </div>
         <div className="Meditation">
             <p>Meditation</p>
+            <MeditationIcon/>
         </div>
         <div className="Videogames">
             <p>Videogames</p>
+            <VGIcon/>
         </div>
         <div className="Other">
             <p>Other</p>
+            <Other/>
         </div>
         </div>
         <button id="Next" onClick={()=>{Navigate("../Timer")}}>Next</button>
