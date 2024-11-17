@@ -1,4 +1,5 @@
-
+/*import bootstrap */
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Chat(){
     return(
     <>
@@ -13,10 +14,8 @@ export default function Chat(){
       </header>
       <aside>
         <h3>Saved Conversations</h3>
-        <div className="savedChats-List">
-            <ul>
-
-            </ul>
+        <div className="Prev-Chats">
+            <div className=''></div>
         </div>
       </aside>
       <section className="Chat-layout">
