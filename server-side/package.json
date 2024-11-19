@@ -12,6 +12,7 @@
     "@apollo/server": "^4.10.5",
     "express": "^4.21.1",
     "mongoose": "^8.8.2",
+    "openai": "^4.72.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
