@@ -1,30 +1,16 @@
-/*import bootstrap */
-import 'bootstrap/dist/css/bootstrap.min.css';
+/*import react bootstrap components needed*/
+import button from "react-bootstrap/button";
 export default function Chat(){
     return(
     <>
-      <header>
-        <i id="chatBot"></i>
-        <h4>ChatBot</h4>
-        <p>Online</p>
-        <div className="topic-time">
-            <p>Selected topic:</p>
-            <p>Remaining Time:</p>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-6 col-md-4 col-md-2">
+            
+          </div>
+          <div className="col-sm-6 col-md-4 col-md-2">Col Two</div>
         </div>
-      </header>
-      <aside>
-        <h3>Saved Conversations</h3>
-        <div className="Prev-Chats">
-            <div className=''></div>
-        </div>
-      </aside>
-      <section className="Chat-layout">
-
-      </section>
-      <section id="PushToTalk">
-        <button></button>
-      </section>
-        
+      </div>  
     </>
     )
 }
