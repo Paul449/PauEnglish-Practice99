@@ -1,17 +1,16 @@
 /*import react bootstrap components needed*/
+
 export default function Chat(){
     return(
     <>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-6 col-md-4 col-md-2">
-            Column 1
+      <div className="chat-layout">
+        <div className="">
+          <h2>Saved Conversations</h2>
+          <div className="conver-list">
+             
           </div>
-          <div className="col-sm-6 col-md-4 col-md-2">
-            Column 2
-          </div>
-        </div>
-      </div>  
+        </div>  
+      </div> 
     </>
     )
 }

@@ -1,14 +1,10 @@
-/*
-export default function TalkButton(){
-
+import Button from 'react-bootstrap/Button';
+import PushToTalk from '../assets/PTT';
+function TalkButton(color){
 return(
     <>
-    <form>
-        <label for='topic'>Enter any topic you would like to talk about:</label>
-        <input type="text"></input>
-        <input type="submit" value="Submit">Click</input>
-    </form>
+    <Button variant='PTT'><PushToTalk/> Push-To-Talk </Button>
     </>
 )  
 }
-*/
+export default TalkButton;
