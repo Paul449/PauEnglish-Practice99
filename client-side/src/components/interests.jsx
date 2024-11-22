@@ -30,142 +30,144 @@ import VGIcon from '../assets/VGIcon';
 import Other from '../assets/OtherIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
+import { useState } from 'react';
 export default function Interests(){
     let Navigate = useNavigate();
     let Location = useLocation();
+    const [Color, setColor] = useState("red");
     return(
         <>
         <section className="topics">
         <div className="column1">
-        <div className="Music">
+        <button type="button" onClick={()=>{setColor("blue")}} className="Music">
             <p>Music</p>
             <MusicIcon/>
-        </div>
-        <div className="Art">
+        </button>
+        <button className="Art">
             <p>Art</p>
             <ArtIcon/>
-        </div>
-        <div className="Travel">
+        </button>
+        <button className="Travel">
             <p>Travel</p>
             <TravelIcon/>
-        </div>
-        <div className="SocialMedia">
+        </button>
+        <button className="SocialMedia">
             <p>Social Media</p>
             <SocialMedia/>
-        </div>
-        <div className="History">
+        </button>
+        <button className="History">
             <p>History</p>
             <HistoryIcon/>
-        </div>
+        </button>
         </div>
         <div className="column2">
-        <div className="Hobbies">
+        <button className="Hobbies">
             <p>Hobbies</p>
-        </div>
-        <div className="Sports">
+        </button>
+        <button className="Sports">
             <p>Sports</p>
             <SportIcon/>
-        </div>
-        <div className="Interview">
+        </button>
+        <button className="Interview">
             <p>Interview</p>
             <InterviewIcon/>
-        </div>
-        <div className="Geography">
+        </button>
+        <button className="Geography">
             <p>Geography</p>
             <GeoIcon/>
-        </div>
-        <div className="Food">
+        </button>
+        <button className="Food">
             <p>Food</p>
             <FoodIcon/>
-        </div>
+        </button>
         </div>
         <div className="column3">
-        <div className="Dating">
+        <button className="Dating">
             <p>Dating</p>
             <DatingIcon/>
-        </div>
-        <div className="Dancing">
+        </button>
+        <button className="Dancing">
             <p>Dancing</p>
             <DancingIcon/>
-        </div>
-        <div className="Museum">
+        </button>
+        <button className="Museum">
             <p>Museum</p>
             <MuseumIcon/>
-        </div>
-        <div className="Plants">
+        </button>
+        <button className="Plants">
             <p>Plants</p>
             <PlantIcon/>
-        </div>
-        <div className="Gym">
+        </button>
+        <button className="Gym">
             <p>Gym</p>
             <GymIcon/>
-        </div>
+        </button>
         </div>
         <div className="column4">
-        <div className="Hiking">
+        <button className="Hiking">
             <p>Hiking</p>
             <HikingIcon/>
-        </div>
-        <div className="Acting">
+        </button>
+        <button className="Acting">
             <p>Acting</p>
             
-        </div>
-        <div className="Painting">
+        </button>
+        <button className="Painting">
             <p>Painting</p>
             <PaintingIcon/>
-        </div>
-        <div className="Running">
+        </button>
+        <button className="Running">
             <p>Running</p>
             <RunningIcon/>
-        </div>
-        <div className="MartialArts">
+        </button>
+        <button className="MartialArts">
             <p>Martial Arts</p>
             <MartialArtIcon/>
-        </div>
+        </button>
         </div>
         <div className="column5">
-        <div className="Coffee">
+        <button className="Coffee">
             <p>Coffee</p>
             <CoffeeIcon/>
-        </div>
-        <div className="Cooking">
+        </button>
+        <button className="Cooking">
             <p>Cooking</p>
             <CookingIcon/>
-        </div>
-        <div className="Photography">
+        </button>
+        <button className="Photography">
             <p>Photography</p>
             <PhotographyIcon/>
-        </div>
-        <div className="Coding">
+        </button>
+        <button className="Coding">
             <p>Coding</p>
             <CodingIcon/>
-        </div>
-        <div className="Cars">
+        </button>
+        <button className="Cars">
             <p>Cars</p>
             <CarIcon/>
-        </div>
+        </button>
         </div>
         <div className="column6">
-        <div className="Festivals">
+        <button className="Festivals">
             <p>Festivals</p>
             <FestivalIcon/>
-        </div>
-        <div className="Podcasts">
+        </button>
+        <button className="Podcasts">
             <p>Podcasts</p>
             <PodcastIcon/>
-        </div>
-        <div className="Meditation">
+        </button>
+        <button className="Meditation">
             <p>Meditation</p>
             <MeditationIcon/>
-        </div>
-        <div className="Videogames">
+        </button>
+        <button className="Videogames">
             <p>Videogames</p>
             <VGIcon/>
-        </div>
-        <div className="Other">
+        </button>
+        <button className="Other">
             <p>Other</p>
             <Other/>
-        </div>
+        </button>
         </div>
         <button id="Next" onClick={()=>{Navigate("../Timer")}}>Next</button>
     </section>

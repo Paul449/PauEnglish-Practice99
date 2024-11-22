@@ -418,6 +418,11 @@ main{
 /*Timer*/
 
 /*Chat*/
+.Saved{
+    display: inline-grid;
+    border: 5px solid black;
+    padding-bottom: 105%;
+}
 
 /*Error*/
 
