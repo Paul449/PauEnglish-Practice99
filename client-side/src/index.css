@@ -420,10 +420,10 @@ main{
 /*Chat*/
 .conver-list{
     display: inline-grid;
-    padding: 70%;
-    height: 250%;
+    padding: 70px;
+    height: 250px;
     border: 2px solid black;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 
 /*Error*/

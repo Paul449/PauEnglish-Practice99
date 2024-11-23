@@ -7,20 +7,13 @@ export default function Chat(){
     return(
     <>
       <Container fluid = "md"> 
-        <Row>
-         <Col lg={4}>column 1
+        <Row style={{display:'inline-grid',border:'2px solid blue',padding:'70px', height: '250%'}}>
+         <Col xs={2} sm={4} md={6} lg={8} xl={10}>column 1
             <h5>Saved Conversations</h5>
             <div className='conver-list'>
-              <ol>
-                <li>
-                  <div className='conver'>
-                    <p>Topic:</p>
-                  </div>
-                </li>
-              </ol>
+              
             </div>
          </Col>
-         <Col lg={8}>column 2</Col>
         </Row>
       </Container>
     </>
