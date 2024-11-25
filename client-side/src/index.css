@@ -418,13 +418,6 @@ main{
 /*Timer*/
 
 /*Chat*/
-.conver-list{
-    display: inline-grid;
-    padding: 70px;
-    height: 250px;
-    border: 2px solid black;
-    border-radius: 15px;
-}
 
 /*Error*/
 

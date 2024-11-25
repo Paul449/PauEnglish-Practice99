@@ -2,20 +2,22 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import SearchBox from "../components/searchBox";
 export default function Chat(){
     return(
     <>
-      <Container fluid = "md"> 
-        <Row style={{display:'inline-grid',border:'2px solid blue',padding:'70px', height: '250%'}}>
-         <Col xs={2} sm={4} md={6} lg={8} xl={10}>column 1
-            <h5>Saved Conversations</h5>
-            <div className='conver-list'>
-              
-            </div>
-         </Col>
-        </Row>
-      </Container>
+    <Container fluid = 'lg' className='vh-100' >
+     <Row className='h-100' lg={4}>
+      <Col lg = {4} style={{backgroundColor:'#1E90FF', borderRight:'5px solid #708090', padding:'20px'}} className='h-100'>
+      col One
+      <div className='conver-list' style={{border:'2px solid black'}}>
+
+      </div>
+      </Col>
+      <Col lg = {8} style={{backgroundColor:'#F0F8FF', padding:'20px'}} className='h-100'>
+      col Two
+      </Col>
+     </Row>
+    </Container>
     </>
     )
 }
