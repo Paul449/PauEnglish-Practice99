@@ -418,7 +418,27 @@ main{
 /*Timer*/
 
 /*Chat*/
-
+.Online{
+    display: inline-grid;
+    border: 2px solid black;
+    background-color: red;
+    padding: '100px';
+}
+.conversations{
+     background-color:'#1E90FF';
+     border-right:'5px solid #708090' ;
+     padding:'20px';
+     width:'200px'; 
+}
+.conver-list{
+     display:'block'; 
+     border:'2px solid black';
+}
+.chatLayout{
+    background-color:'#F0F8FF';
+    padding:'20px';
+    width:'800px';
+}
 /*Error*/
 
 /*COMPONENTS*/
