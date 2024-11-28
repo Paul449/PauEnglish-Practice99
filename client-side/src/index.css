@@ -418,14 +418,15 @@ main{
 /*Timer*/
 
 /*Chat*/
+/*
 .Online{
     display: inline-grid;
     border: 2px solid black;
     background-color: red;
     padding: '100px';
-}
+}*/
 .conversations{
-     background-color:'#1E90FF';
+     background-color:'black';
      border-right:'5px solid #708090' ;
      padding:'20px';
      width:'200px'; 
