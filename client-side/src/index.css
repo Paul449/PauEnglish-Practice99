@@ -458,6 +458,18 @@ main{
     height: 100vh;
     width: 50%;
 }
+.chatBot{
+    background-color: #00ff0080;
+    padding-bottom: 0%;
+    display: flex;
+}
+#Bot{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.IF{
+    background-color: red;
+}
 /*Error*/
 
 /*COMPONENTS*/

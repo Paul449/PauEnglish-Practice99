@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SearchBox from '../components/searchBox';
+import OnlineBar from '../components/onlineBar';
 //import OnlineBar from '../components/onlineBar';
 export default function Chat(){
     return(
@@ -18,7 +19,6 @@ export default function Chat(){
             <h5>Saved Conversations:</h5>
           </div>
 
-          {/* Search bar component */}
           <div className="Search-bar">
             <SearchBox />
           </div>
@@ -28,7 +28,7 @@ export default function Chat(){
           </div>
         </Col>
         <Col md={8} className="chatLayout h-100">
-         
+        <OnlineBar/>
         </Col>
       </Row>
     </Container>
