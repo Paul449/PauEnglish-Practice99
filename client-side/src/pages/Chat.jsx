@@ -7,24 +7,30 @@ import SearchBox from '../components/searchBox';
 export default function Chat(){
     return(
     <>
-    <Container fluid ='lg' className='vh-100' >
-     <Row className='no-gutters' >
-      <Col lg = {4} className='conversations h-100'>
-      <div className='settings-tray'>
-      <div className='profile-image'><img src=''alt='myself'/></div>  
-      <h5>Saved Conversations:</h5>
-      </div>
-      <div className='Search-bar'>
-        <SearchBox/>
-      </div>
-      <div className='conver-list'>
+    <Container fluid ='lg'  className='full-screen' >
+    <Row className="no-gutters w-100">
+        {/* Conversations Section */}
+        <Col md={4} className="conversations h-100">
+          <div className="settings-tray">
+            <div className="profile-image">
+              <img  alt="myself" />
+            </div>
+            <h5>Saved Conversations:</h5>
+          </div>
 
-      </div>
-      </Col>
-      <Col lg={8} className=' chatLayout h-100'>
-    
-      </Col>
-     </Row>
+          {/* Search bar component */}
+          <div className="Search-bar">
+            <SearchBox />
+          </div>
+
+          <div className="conver-list">
+            
+          </div>
+        </Col>
+        <Col md={8} className="chatLayout h-100">
+         
+        </Col>
+      </Row>
     </Container>
     </>
     )

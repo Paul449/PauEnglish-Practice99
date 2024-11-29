@@ -425,20 +425,38 @@ main{
     background-color: red;
     padding: '100px';
 }*/
+
+
+
+.no-gutters{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}  
+
+
 .conversations{
-     background-color:'black';
-     border-right:'5px solid #708090' ;
-     padding:'20px';
-     width:'200px'; 
+     background-color: DodgerBlue;
+     border-right: 5px solid #708090 ;
+     height: 100vh;
+     align-content: start;
+     align-items: center;
+     padding-right: 7%;
+     padding-left: 2%;
 }
-.conver-list{
-     display:'block'; 
-     border:'2px solid black';
+.conver-list{ 
+     display: block;
+     border: 2px solid black;
+     margin-top: 15%;
+     height: 80vh;
+     border-radius: 15%;
 }
 .chatLayout{
-    background-color:'#F0F8FF';
-    padding:'20px';
-    width:'800px';
+    background-color: #F0F8FF;
+    height: 100vh;
+    width: 50%;
 }
 /*Error*/
 
