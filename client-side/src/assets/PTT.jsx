@@ -1,5 +1,5 @@
 //export push to talk Icon
-function PushToTalk(){
+function PushToTalk(color){
     return(<>
      <svg
   id="Microphone_24"

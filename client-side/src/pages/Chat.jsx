@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SearchBox from '../components/searchBox';
 import OnlineBar from '../components/onlineBar';
+import TalkButton from '../components/TalkButton';
 //import OnlineBar from '../components/onlineBar';
 export default function Chat(){
     return(
@@ -30,10 +31,10 @@ export default function Chat(){
         <Col md={8} className="chatLayout h-100">
         <OnlineBar/>
         <div className='Messaging'>
-          
+
         </div>
         <div className='talkingBtn'>
-             
+            <TalkButton/>
         </div>
         </Col>
       </Row>
