@@ -468,21 +468,24 @@ main{
     object-fit: cover;
     color: white;
 }
-#IF{
-    background-color: red;
+.chatOnline{
     color: white;
 }
+.topicTimer{
+    background-color: red;
+}
+
 .Messaging{
     display: block;
-    height: 79vh;
-    background-color: aqua;
+    height: 77vh;
+    border-top: 2px solid black;
 }
 .talkingBtn{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: yellow;
-    height: 9.5vh;
+    border-top: 2px solid black;
+    height: 11.4vh;
 }
 /*Error*/
 
@@ -503,10 +506,12 @@ main{
     flex-direction: column;
     justify-content: center;
     border-radius: 35%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-
+#Microphone_24{
+    margin-left: 25%;
+}
 /*PSEUDO ELEMENTS*/
 
 /*PSEUDO CLASSES*/
