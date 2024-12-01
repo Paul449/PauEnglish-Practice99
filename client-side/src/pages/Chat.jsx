@@ -29,6 +29,12 @@ export default function Chat(){
         </Col>
         <Col md={8} className="chatLayout h-100">
         <OnlineBar/>
+        <div className='Messaging'>
+          
+        </div>
+        <div className='talkingBtn'>
+             
+        </div>
         </Col>
       </Row>
     </Container>

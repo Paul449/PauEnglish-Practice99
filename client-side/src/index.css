@@ -466,9 +466,21 @@ main{
 #Bot{
     border-radius: 50%;
     object-fit: cover;
+    color: white;
 }
-.IF{
+#IF{
     background-color: red;
+    color: white;
+}
+.Messaging{
+    display: block;
+    height: 79vh;
+    background-color: aqua;
+}
+.talkingBtn{
+    display: block;
+    background-color: #e66465;
+    height: 10vh;
 }
 /*Error*/
 
