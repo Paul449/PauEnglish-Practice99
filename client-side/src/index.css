@@ -468,6 +468,10 @@ main{
     object-fit: cover;
     color: white;
 }
+.Search-bar{
+background-color: #FF4500;
+padding-right: 10%;
+}
 .chatOnline{
     color: white;
 }
@@ -486,6 +490,13 @@ main{
     justify-content: center;
     border-top: 2px solid black;
     height: 11.4vh;
+}
+.input-group{
+    background-color: aqua;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 /*Error*/
 
