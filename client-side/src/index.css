@@ -22,21 +22,30 @@ main{
 .Container-T{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     position: relative;
+    flex-direction: column;
     left: 100%;
     top: 50%;
     background-color: blue;
     color: white;
     text-align: center;
     align-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 #topic-select{
     margin-bottom: 9%;
 }
+.column1{
+    background-color: #FF4500;
+    padding-right: 2%;
+}
+.column2{
+    background-color: #e66465;
+}
 .topics{
     display: grid;
-    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    grid-template-columns: 140px 140px 140px 140px 140px 140px;
     column-gap: 15px;
     align-content: center;
 }
