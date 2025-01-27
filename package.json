@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Paul449/PauEnglish-Practice99/issues"
   },
-  "homepage": "https://github.com/Paul449/PauEnglish-Practice99#readme"
+  "homepage": "https://github.com/Paul449/PauEnglish-Practice99#readme",
+  "dependencies": {
+    "-": "^0.0.1"
+  }
 }
