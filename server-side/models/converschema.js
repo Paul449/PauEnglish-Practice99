@@ -1,6 +1,7 @@
 import mongoose from "../config/connection";
-import { Schema } from "mongoose";
 
-const conversation = new Schema({
-
+const converschema = new mongoose.Schema({
+    converID: {type:Number, required:true},
 })
+const Conversation = mongoose.model('conversation', converschema);
+module.exports = Conversation;

@@ -1,11 +1,8 @@
 import mongoose from "../config/connection"; //connecting to PauEnglish DB
-//import model from mongoose library to create my topic database and store each one
-import { model,Schema } from "mongoose";
 //defining topic schema to structue collection of documents
-const TopicSchema = new Schema({
-    id:{type: Number, required: true, unique: true},
-    name: {type: String, required:true, unique: true},
-    
+const TopicSchema = new mongoose.Schema({
+    id:{type: Number, required: true, unique: true}, // topic id where is stored
+    topic: {type: String, required: true}, // topic name used to interact with openai server through controllers
 });
-const Topic = model('Topic',TopicSchema);
+const Topic = mongoose.model('Topic',TopicSchema);
 module.exports = Topic;
