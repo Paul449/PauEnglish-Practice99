@@ -4,6 +4,9 @@ let OpenAI = require('openai');
 let fs = require('fs');
 //run dotenv
 let dotenv = require('dotenv').config();
+/*small section to test speech to text packages configuration
+
+*/
 //conect to openAI API
 let openai = new OpenAI({
    apiKey:process.env.OPENAI_KEY
@@ -25,6 +28,7 @@ app.listen(PORT,()=>{
 })
 
 // short test how to convert audio to text
+/*
 async function audioToText(){
  let transcription = await openai.audio.transcriptions.create({
     file:fs.createReadStream('./demo.mp3'),
@@ -33,3 +37,5 @@ async function audioToText(){
  console.log(transcription);
 }
 audioToText();
+*/
+//short test on how to convert speech to text
