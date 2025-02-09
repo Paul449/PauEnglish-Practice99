@@ -5,6 +5,7 @@ import { model,Schema } from "mongoose";
 const TopicSchema = new Schema({
     id:{type: Number, required: true, unique: true},
     name: {type: String, required:true, unique: true},
+    
 });
 const Topic = model('Topic',TopicSchema);
 module.exports = Topic;
