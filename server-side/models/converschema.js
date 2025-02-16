@@ -23,9 +23,10 @@ const converschema = new mongoose.Schema({
             type: String,
         },
         comment:{
-            type: Text, // feedback message
-            min: 250, // minimum length of feedback message
-            max: 500 // maximum length of feedback message
+            type: String, // feedback message
+            required: true,
+            minlength: 250, // minimum length of feedback message
+            maxlength: 500 // maximum length of feedback message
         },
         path:'_id'
     }
