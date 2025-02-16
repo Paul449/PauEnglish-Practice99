@@ -1,7 +1,5 @@
 import mongoose from "../config/connection";
-import {type} from 'mongoose';
 /*
-
 
 */
 const converschema = new mongoose.Schema({
@@ -10,7 +8,7 @@ const converschema = new mongoose.Schema({
         required: true,
         unique: true
         },
-    name: { // name of the topic discussed
+    title: { // name of the topic discussed
         type: String,
         required: true
     },
@@ -18,9 +16,14 @@ const converschema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    video:{
+        
+    },
     feedback:{
         level:{
             type: String,
+            required: true
+            
         },
         comment:{
             type: String, // feedback message
