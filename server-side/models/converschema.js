@@ -22,7 +22,7 @@ const converschema = new mongoose.Schema({
         size: {type:Number}
     },
     feedback:{
-        level:{
+        score:{
             type: String,
             required: true
             
