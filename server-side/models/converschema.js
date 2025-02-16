@@ -13,11 +13,13 @@ const converschema = new mongoose.Schema({
         required: true
     },
     time:{ //timestamp
-        type: Date,
+        type: Date, // defining datatype of date
         default: Date.now
     },
     video:{
-        
+        videoTitle:{type: String},
+        filename:{type:String},
+        size: {type:Number}
     },
     feedback:{
         level:{
@@ -28,8 +30,8 @@ const converschema = new mongoose.Schema({
         comment:{
             type: String, // feedback message
             required: true,
-            minlength: 250, // minimum length of feedback message
-            maxlength: 500 // maximum length of feedback message
+            minlength: 255, // minimum length of feedback message meeting the minimum of 255 characters
+            maxlength: 1000 // maximum length of feedback message up to 1000 characters
         },
         path:'_id'
     }
