@@ -9,14 +9,14 @@ const converschema = new mongoose.Schema({
         unique: true
         },
     title: { // name of the topic discussed
-        type: String,
-        required: true
+        type: String, // datatype string
+        required: true // must have a particular name when creating new document
     },
     time:{ //timestamp
         type: Date, // defining datatype of date
         default: Date.now
     },
-    video:{
+    video:{ // video recorded from conversation with AI chatbot
         videoTitle:{type: String},
         filename:{type:String},
         size: {type:Number}
