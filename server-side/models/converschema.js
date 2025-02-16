@@ -18,8 +18,16 @@ const converschema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    video:{
-
+    feedback:{
+        level:{
+            type: String,
+        },
+        comment:{
+            type: Text, // feedback message
+            min: 250, // minimum length of feedback message
+            max: 500 // maximum length of feedback message
+        },
+        path:'_id'
     }
 
 })
