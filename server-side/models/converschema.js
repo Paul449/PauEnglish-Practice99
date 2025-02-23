@@ -1,4 +1,4 @@
-import mongoose from "../config/connection";
+import mongoose from "mongoose";
 /*
 
 */
