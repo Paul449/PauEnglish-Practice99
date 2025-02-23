@@ -1,2 +1,2 @@
 //import Mongoose model to mock functionality
-import Conversation from '../models/converschema';
+const Conversation = require('../models/converschema');
