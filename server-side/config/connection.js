@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 mongoose.connect('mongodb://localhost:27017/EnglishDB').then(()=>{ console.log("connection successful")});
 
-module.exports = mongoose.connection;
+export default mongoose;

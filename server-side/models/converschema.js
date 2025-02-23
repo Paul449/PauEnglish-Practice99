@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "../config/connection.js";
 /*
 
 */
@@ -33,9 +33,9 @@ const converschema = new mongoose.Schema({
             minlength: 255, // minimum length of feedback message meeting the minimum of 255 characters
             maxlength: 1000 // maximum length of feedback message up to 1000 characters
         },
-        path:'_id'
+    
     }
 
 })
 const Conversation = mongoose.model('conversation', converschema);
-module.exports = Conversation;
+export default Conversation;
