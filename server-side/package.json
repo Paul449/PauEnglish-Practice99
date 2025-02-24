@@ -8,9 +8,6 @@
     "test": "jest",
     "start": "node index.js"
   },
-  "jest":{
-  "transform": {}
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
