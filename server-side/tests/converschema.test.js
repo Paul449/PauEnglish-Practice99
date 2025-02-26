@@ -6,14 +6,17 @@ const {MongoClient} = require('mongodb');
     let connection; // variable to connect with EnglishDB database
     let EnglishDB; 
     //initialize database test using beforeAll Hook
+    /*
     beforeAll('initialize EnglishDB database', ()=>{
         EnglishDB = initializeDB();
     });
+    
     AfterAll(()=>{
         EnglishDB.close();
     })
+       */ 
     test('Selected topic',()=>{
-        let topic = Conversation.title;
+        let topic = EnglishDB.title.insertOne({title:'Music'});
         expect(topic).toBe('Music');
     })
  })
