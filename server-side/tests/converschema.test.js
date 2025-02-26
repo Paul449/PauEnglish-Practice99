@@ -1,9 +1,19 @@
 //import Mongoose model to mock functionality
 import Conversation from '../models/converschema.js';
 const {MongoClient} = require('mongodb');
-//test string
-test('topic name',()=>{
-    const Conver = Conversation({title:'Music'});// selecting title document from conver schema
-    expect(Conver.title).toBe('Music');
-})
-    
+//test database suite 
+ describe('EnglishDB test',()=>{
+    let connection; // variable to connect with EnglishDB database
+    let EnglishDB; 
+    //initialize database test using beforeAll Hook
+    beforeAll('initialize EnglishDB database', ()=>{
+        EnglishDB = initializeDB();
+    });
+    AfterAll(()=>{
+        EnglishDB.close();
+    })
+    test('Selected topic',()=>{
+        let topic = Conversation.title;
+        expect(topic).toBe('Music');
+    })
+ })
