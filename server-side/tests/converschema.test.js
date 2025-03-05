@@ -1,6 +1,6 @@
 //import Mongoose model to mock functionality
 import Conversation from '../models/converschema.js';
-const {MongoClient} = require('mongodb');
+//const {MongoClient} = require('mongodb');
 //test database suite 
  describe('EnglishDB test',()=>{
     let connection; // variable to connect with EnglishDB database
@@ -16,7 +16,7 @@ const {MongoClient} = require('mongodb');
     })
        */ 
     test('Selected topic',()=>{
-        let topic = EnglishDB.title.insertOne({title:'Music'});
+        let topic = Conversation.title.insertOne({title:'Music'});
         expect(topic).toBe('Music');
     })
  })
