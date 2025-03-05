@@ -4,7 +4,7 @@ export default {
   transform: {
     "^.+\\.(js|jsx|mjs|ts|tsx)$": "babel-jest", // Transform JavaScript and TypeScript files using Babel
   },
-  presets: "@shelf/jest-mongodb",
+  preset: "@shelf/jest-mongodb",
   moduleFileExtensions: ["js", "jsx", "mjs", "ts", "tsx"], // Extensions Jest should recognize
   transformIgnorePatterns: ["/node_modules/"], // Exclude node_modules from transformation
 };

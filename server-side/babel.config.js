@@ -1,5 +1,5 @@
 export default{
-    "presets": [
+    "preset": [
       [
         "@babel/preset-env",
         {

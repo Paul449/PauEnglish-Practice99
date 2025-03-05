@@ -1,22 +1,25 @@
 //import Mongoose model to mock functionality
+import { connection } from 'mongoose';
 import Conversation from '../models/converschema.js';
-//const {MongoClient} = require('mongodb');
+const {MongoClient} = require('mongodb');
 //test database suite 
- describe('EnglishDB test',()=>{
-    let connection; // variable to connect with EnglishDB database
-    let EnglishDB; 
-    //initialize database test using beforeAll Hook
-    /*
-    beforeAll('initialize EnglishDB database', ()=>{
-        EnglishDB = initializeDB();
-    });
-    
-    AfterAll(()=>{
-        EnglishDB.close();
+describe('testing EnglishDB',()=>{
+    //define variable to connect with database
+    let Connection;
+    //define database variable
+    let EnglishDB;
+    //Initialize database to run all test cases from it
+    beforeAll(async ()=>{
+        Connection = await MongoClient.connect(globalThis._MONGO_URI__,{
+            useNewURLParser: true,
+            useUnifiedTopology:true,
+        });
+        EnglishDB = await connection.db(globalThis._MONGO_DB_NAME__);
     })
-       */ 
-    test('Selected topic',()=>{
-        let topic = Conversation.title.insertOne({title:'Music'});
-        expect(topic).toBe('Music');
+    AfterAll(async()=>{
+        await Connection.close();
     })
- })
+    it('insert document into the collection',async()=>{
+        const Topic = EnglishDB.collection('Music');
+    })
+});
