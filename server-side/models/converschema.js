@@ -1,4 +1,4 @@
-import mongoose from "../config/connection.js";
+const {mongoose} = require("../config/connection.js");
 /*
 
 */
@@ -38,4 +38,4 @@ const converschema = new mongoose.Schema({
 
 })
 const Conversation = mongoose.model('conversation', converschema);
-export default Conversation;
+module.export = Conversation;
