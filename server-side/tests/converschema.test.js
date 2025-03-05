@@ -1,5 +1,5 @@
 //import Mongoose model to mock functionality
-import { connection } from 'mongoose';
+const { connection } = require('mongoose');
 import Conversation from '../models/converschema.js';
 const {MongoClient} = require('mongodb');
 //test database suite 
