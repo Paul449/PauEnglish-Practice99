@@ -1,7 +1,8 @@
 export default {
-    testEnvironment: "node", // Ensures Jest runs in a Node.js environment
-    transform: {}, // Keeps Jest from trying to transform ES modules
-    moduleFileExtensions: ["js", "mjs"], // Supports ES modules
-    preset: "@shelf/jest-mongodb"
-  };
-  
+  testEnvironment: "node",
+  transform: {
+    "^.+\\.(js|mjs|jsx|ts|tsx)$": "babel-jest", // Transforms modern JS syntax
+  },
+  moduleFileExtensions: ["js", "mjs", "jsx", "ts", "tsx"], // Add JSX/TS if needed
+  preset: "@shelf/jest-mongodb",
+};
