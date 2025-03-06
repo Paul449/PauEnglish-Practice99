@@ -1,5 +1,6 @@
 //import Mongoose model to mock functionality
 const { connection, default: mongoose } = require('mongoose');
+const {MongoMemoryServer} = require('mongodb-memory-server');
 const {Conversation} = require('../models/converschema.js');
 const {MongoClient} = require('mongodb');
 //test database suite 
@@ -21,6 +22,14 @@ describe('testing EnglishDB',()=>{
         await mongoose.connection.close();
     })
     it('insert document into the collection',async()=>{
-        const Topic = EnglishDB[Conversation].collection('Music');
+        const Title = EnglishDB.collection(Conversation['title']);
+        //testing title
+        const documentConver = {
+            _id:'ID topic',
+            title:'Music',
+        }
+    await Title.insertOne(documentConver);
+    const InsertTopic = await Title.findOne({_id:'ID topic'});
+    expect(InsertTopic).toEqual(documentConver);
     })
 });
