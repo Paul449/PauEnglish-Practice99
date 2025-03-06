@@ -35,11 +35,11 @@ describe('testing EnglishDB',()=>{
             time: new Date(),
             video:{
                 videoTitle:'conver01',
-                filename:'"C:\Users\paul_\Videos\demo.mkv"',
-                size: 5 +'GB',
-                url:'',
-                duration,
-                format,
+                filename:'demo.mkv',
+                size: 10.4,
+                url:'"C:\Users\paul_\Videos\demo.mkv"',
+                duration: 60,
+                format:'mkv',
             },
             feedback:{
                 score: 10,
