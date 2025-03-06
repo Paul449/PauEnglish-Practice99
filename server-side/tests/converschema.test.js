@@ -1,3 +1,4 @@
+require('dotenv').config();
 //import Mongoose model to mock functionality
 const { connection, default: mongoose } = require('mongoose');
 const {MongoMemoryServer} = require('mongodb-memory-server');
@@ -11,18 +12,18 @@ describe('testing EnglishDB',()=>{
     let EnglishDB;
     //connect to database tobefore running all test cases
     beforeAll(async ()=>{
-        Connection = await MongoClient.connect(globalThis._MONGO_URI__,{
-            useNewURLParser: true,
+        Connection = await MongoClient.connect(process.env.MONGO_URI,{
+            useNewUrlParser: true,
             useUnifiedTopology:true,
         });
-        EnglishDB = await Connection.db(globalThis._MONGO_DB_NAME__);
+        EnglishDB = await Connection.db(globalThis.MONGO_DB_NAME);
     })
     //closes database once all tests ran
     afterAll(async()=>{
         await mongoose.connection.close();
     })
     it('insert document into the collection',async()=>{
-        const Title = EnglishDB.collection(Conversation['title']);
+        const Title = EnglishDB.collection('conversation');
         //testing title
         const documentConver = {
             _id:'ID topic',
