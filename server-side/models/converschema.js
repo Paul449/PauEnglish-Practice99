@@ -10,22 +10,27 @@ const converschema = new mongoose.Schema({
         },
     title: { // name of the topic discussed
         type: String, // datatype string
-        required: true // must have a particular name when creating new document
+        required: true,// must have a particular name when creating new document
+        trim:true
     },
     time:{ //timestamp
         type: Date, // defining datatype of date
         default: Date.now
     },
     video:{ // video recorded from conversation with AI chatbot
-        videoTitle:{type: String},
-        filename:{type:String},
-        size: {type:Number}
+        videoTitle:{type: String, trim:true},
+        filename:{type:String, trim:true},
+        size: {type:Number, min:0},
+        url:{ type:String, trim:true},
+        duration:{type:Number, min:0},
+        format:{type:String, trim:true}
     },
-    feedback:{
+    feedback:{ // feedback provided to me after finishing conversation with chatbot
         score:{
-            type: String,
-            required: true
-            
+            type: Number, // score will be provided
+            min: 0, // minimum score of 0
+            max: 10, // maximum score of 10
+            required: true  
         },
         comment:{
             type: String, // feedback message

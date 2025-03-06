@@ -32,9 +32,20 @@ describe('testing EnglishDB',()=>{
         const documentConver = {
             _id:new ObjectId(),
             title:'Music',
+            time: new Date(),
+            video:{
+                videoTitle:'conver01',
+                filename:'"C:\Users\paul_\Videos\demo.mkv"',
+                size: 5 +'GB',
+            },
+            feedback:{
+                score: 10,
+                comment:'Great job on implementing the feature! Your code is well-structured,\n and I appreciate your use of meaningful variable names. Here are a few suggestions for improvement:',
+            }
         }
     await Title.insertOne(documentConver);
     const InsertTopic = await Title.findOne({_id:documentConver._id});
     expect(InsertTopic).toEqual(documentConver);
+    console.log(InsertTopic)
     })
 });
