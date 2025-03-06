@@ -37,6 +37,9 @@ describe('testing EnglishDB',()=>{
                 videoTitle:'conver01',
                 filename:'"C:\Users\paul_\Videos\demo.mkv"',
                 size: 5 +'GB',
+                url:'',
+                duration,
+                format,
             },
             feedback:{
                 score: 10,

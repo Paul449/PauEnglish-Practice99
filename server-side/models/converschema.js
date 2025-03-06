@@ -28,7 +28,7 @@ const converschema = new mongoose.Schema({
     feedback:{ // feedback provided to me after finishing conversation with chatbot
         score:{
             type: Number, // score will be provided
-            min: 0, // minimum score of 0
+            min: 1, // minimum score of 0
             max: 10, // maximum score of 10
             required: true  
         },
