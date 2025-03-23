@@ -1,7 +1,7 @@
 //import OpenAI
 import OpenAI from'openai';
 // import file system
-//let fs = require('fs');
+import fs from 'fs';
 //run dotenv
 import 'dotenv/config';
 
