@@ -21,10 +21,12 @@ import express from 'express';
 let app = express();
 //define port number
 let PORT = process.env.PORT || 3000;
-app.use(express.json());
-app.get('/',(req,res,next)=>{
-   res.send('hello')
+app.use((req,res,next)=>{
    next();
+});
+
+app.get('/',(req,res)=>{
+   res.send('hello')
 });
 //test
 app.listen(PORT,()=>{
