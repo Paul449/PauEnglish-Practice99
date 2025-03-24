@@ -22,7 +22,10 @@ let app = express();
 //define port number
 let PORT = process.env.PORT || 3000;
 app.use(express.json());
-app.get('/',(req,res)=>{res.send('hello')});
+app.get('/',(req,res,next)=>{
+   res.send('hello')
+   next();
+});
 //test
 app.listen(PORT,()=>{
  console.log(`listening on http://localhost:${PORT}`)
