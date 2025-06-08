@@ -1,9 +1,12 @@
 //importing openAI server library
 import OpenAI from "openai";
+//connect openai client
+//connect to openAI API
+let openai = new OpenAI({
+   apiKey:process.env.OPENAI_KEY
+});
 //import file system library
 import fs from 'fs';
-// openAI client
-let openai = OpenAI();
 //request to server to talk about selected topic
  const getConversation = function(topic){
 
