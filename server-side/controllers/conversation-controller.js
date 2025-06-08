@@ -1,9 +1,24 @@
+//importing openAI server library
 import OpenAI from "openai";
+//import file system library
+import fs from 'fs';
+// openAI client
+let openai = OpenAI();
 //request to server to talk about selected topic
-function getConversation(){
-    
-}
-//function to convert speech to text
-function textToSpeech(){
+ const getConversation = function(topic){
 
+ }
+//function to convert speech to text
+async function textToSpeech(){
+ let transcription = await openai.audio.transcriptions.create({
+    file: fs.createReadStream(''),
+    model:"gpt-4o-mini-transcribe",
+    response_format:"text",
+    prompt,
+ })
 }
+//function to measure conversation time
+function measureTime(){
+ 
+}
+//store conversation in database once conversation is over
