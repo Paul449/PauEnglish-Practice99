@@ -30,16 +30,15 @@ import VGIcon from '../assets/VGIcon';
 import Other from '../assets/OtherIcon';
 /*useNavigation and useLocation to know current location and navigate to other pages on my application */
 import{useNavigate, useLocation} from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect } from 'react';
 export default function Interests(){
     let Navigate = useNavigate();
     let Location = useLocation();
-    const [Color, setColor] = useState("red");
     return(
         <>
         <section className="topics">
         <div className="column1">
-        <button type="button" onClick={()=>{setColor("blue")}} className="Music">
+        <button type="button" className="Music">
             <p>Music</p>
             <MusicIcon/>
         </button>
