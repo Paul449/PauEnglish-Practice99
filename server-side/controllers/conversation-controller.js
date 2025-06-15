@@ -1,5 +1,5 @@
-//importing openAI server library
-import OpenAI from "openai";
+//import message function to start conversation on selected topic
+const {getMessage} = require('./topics-controller');
 //connect openai client
 //connect to openAI API
 let openai = new OpenAI({

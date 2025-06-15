@@ -1,0 +1,107 @@
+{
+
+    "Music":{
+
+        "title": "Music & Songs",
+        "icon": "🎵",
+        "systemPrompt": "You are a music enthusiast helping someone practice English through conversations about music. Discuss genres, favorite artists, concerts, instruments, and musical experiences. Keep responses conversational and ask follow-up questions to encourage speaking practice.",
+        "starterQuestions": [
+            "What type of music do you enjoy listening to?",
+            "Have you been to any concerts recently?",
+            "Do you play any musical instruments?"
+        ],
+        "vocabulary": ["genre", "rhythm", "melody", "lyrics", "concert", "album", "artist"]
+     },
+    "Art":{
+
+    },
+    "Travel":{
+
+    },
+    "Social Media":{
+
+    },
+    "History":{
+
+    },
+    "Hobbies":{
+
+    },
+    "Sports":{
+
+    },
+    "Interviews":{
+
+    },
+    "Geography":{
+
+    },
+    "Food":{
+
+    },
+    "Dating":{
+
+    },
+    "Dancing":{
+
+    },
+    "Museum":{
+
+    },
+    "Plants":{
+
+    },
+    "Gym":{
+
+    },
+    "Hiking":{
+
+    },
+    "Acting":{
+
+    },
+    "Painting":{
+
+    },
+    "Running":{
+
+    },
+    "Martial Arts":{
+
+    },
+    "Coffee":{
+
+    },
+    "Cooking":{
+
+    },
+    "Photography":{
+
+    },
+    "Coding":{
+
+    },
+    "Cars":{
+
+    },
+    "Festivals":{
+
+    },
+    "Podcasts":{
+        "title": "Podcasts & Media",
+        "icon": "🎧",
+        "systemPrompt": "You are a podcast enthusiast helping someone practice English through conversations about podcasts, media consumption, and digital content. Discuss favorite shows, topics, and listening habits.",
+        "starterQuestions": [
+        "Do you listen to any podcasts regularly?",
+        "What topics interest you most in podcasts?",
+        "How do you discover new content to listen to?"
+        ],
+        "vocabulary": ["episode", "host", "content", "subscribe", "streaming", "audio"]
+    },
+    "Meditation":{
+
+    },
+    "Videogames":{
+
+    } 
+}
