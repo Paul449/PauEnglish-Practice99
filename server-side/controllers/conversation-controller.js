@@ -21,7 +21,10 @@ async function textToSpeech(){
  })
 }
 //function to measure conversation time
-function measureTime(){
- 
+function measureTime(time){
+ //setTimeOut function to measure how long the conversation is
+   setTimeout(() => {
+      console.log("Conversation ended");
+   }, time); // 60 seconds for example
 }
 //store conversation in database once conversation is over
