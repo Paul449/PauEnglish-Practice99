@@ -3,7 +3,14 @@ import {getMessage} from './topics-controller.js';
 //connect openai client
 //request to server to talk about selected topic
  const getConversation = function(topic){
-
+   //send request to openai server
+   const conversation =  getMessage({
+      id: topic,
+      messages:[{
+         role: 'user',
+         message: content
+      }]
+   })
  }
 //function to convert speech to text
 async function textToSpeech(){
@@ -30,5 +37,5 @@ function measureTime(minutes){
 setInterval((measureTime) => {
       console.log("Conversation ended");
    }, 60000); // up to 10 minutes
-console.log(measureTime);
+
 //store conversation in database once conversation is over
