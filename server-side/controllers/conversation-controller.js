@@ -1,12 +1,6 @@
 //import message function to start conversation on selected topic
-const {getMessage} = require('./topics-controller');
+import {getMessage} from './topics-controller.js';
 //connect openai client
-//connect to openAI API
-let openai = new OpenAI({
-   apiKey:process.env.OPENAI_KEY
-});
-//import file system library
-import fs from 'fs';
 //request to server to talk about selected topic
  const getConversation = function(topic){
 
@@ -26,7 +20,7 @@ function measureTime(minutes){
  if(minutes > 10){
     console.log("Conversation ended due to time limit");
     return;
- } else if(minutes <= 10){
+ } else if(minutes < 10){
     console.log("Conversation is still ongoing");
     return;
  } else{
@@ -36,5 +30,5 @@ function measureTime(minutes){
 setInterval((measureTime) => {
       console.log("Conversation ended");
    }, 60000); // up to 10 minutes
-
+console.log(measureTime);
 //store conversation in database once conversation is over
