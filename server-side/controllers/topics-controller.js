@@ -12,22 +12,4 @@ function selectTopic(req,res){
         id:'topic',
     })
 }
-// response topic, prepare answer with first message on the chat, conducted by model
-export default async function getMessage(req,res,next){
-    try{
-        let completion = await openai.chat.completions.create({
-         model: "gpt-4",
-         messages:[{
-            role: "user",
-            message:req.body.message || req.body.content
-        }]
-    })
-    const message = completion.choices[0].message.content
-    res.status(200).json({
-        message:message,
-        status:"success"
-    });
-    }catch{
-        console.error("Error message");
-    }
-}
+
