@@ -2,13 +2,15 @@
 export default async function getMessage(req,res,next){
     try{
         let completion = await openai.chat.completions.create({
-         model: "gpt-4",
+         model: "gpt-4.1",
          messages:[{
             role: "user",
-            message:req.body.message || req.body.content
+            message:req.body.message || req.body.content,
+            store: true
         }]
     })
     const message = completion.choices[0].message.content
+    console.log(message)
     res.status(200).json({
         message:message,
         status:"success"
@@ -37,23 +39,26 @@ async function textToSpeech(){
     prompt,
  })
 }
+//function to provide feedback on the conversation once it is overn
 //function to measure conversation time
 function measureTime(){
    getConversation(topic);
    const startTime = new Date();
- //setTimeOut function to measure how long the conversation is
- if(getConversation > 10){
-    console.log("Conversation ended due to time limit");
-    return;
- } else if(getConversation < 10){
+ //conversation more than 10 minutes, finish conversation
+ if(getConversation > 600000){
+    const endTime = new Date();
+    const timeLimit = endTime - startTime;
+    console.log('conversation time limit reached', timeLimit);
+    // if conversation is less than time limit, make conversation still going
+ } else if(getConversation < 600000){
     console.log("Conversation is still ongoing");
     return;
  } else{
       return;
  }
 }
-setInterval((measureTime) => {
-      console.log("Conversation ended");
-   }, 60000); // up to 10 minutes
+setInterval(() => {
+      console.log("Conversation ended", measureTime());
+   }, 600000); // up to 10 minutes
 
 //store conversation in database once conversation is over
