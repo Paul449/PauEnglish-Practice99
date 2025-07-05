@@ -7,9 +7,11 @@ let openai = new OpenAI({
 import fs from 'fs';
 //request topic
 function selectTopic(req,res){
-    //send request to openai server
-    let topic = req.params.id({
-        id:'topic',
-    })
+    try{
+        let topic;
+    }catch{
+
+    }
+    
 }
 

@@ -38,12 +38,14 @@ async function textToSpeech(){
  })
 }
 //function to measure conversation time
-function measureTime(minutes){
+function measureTime(){
+   getConversation(topic);
+   const startTime = new Date();
  //setTimeOut function to measure how long the conversation is
- if(minutes > 10){
+ if(getConversation > 10){
     console.log("Conversation ended due to time limit");
     return;
- } else if(minutes < 10){
+ } else if(getConversation < 10){
     console.log("Conversation is still ongoing");
     return;
  } else{
