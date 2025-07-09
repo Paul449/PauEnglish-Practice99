@@ -1,12 +1,16 @@
+//importing openAI server library
+import OpenAI from "openai";
+let openai = new OpenAI({
+   apiKey:process.env.OPENAI_KEY
+});
 // response topic, prepare answer with first message on the chat, conducted by model
-export default async function getMessage(req,res,next){
+async function getMessage(req,res,next){
     try{
         let completion = await openai.chat.completions.create({
          model: "gpt-4.1",
          messages:[{
             role: "user",
-            message:req.body.message || req.body.content,
-            store: true
+            content:req.body.message || req.body.content,
         }]
     })
     const message = completion.choices[0].message.content
@@ -15,12 +19,12 @@ export default async function getMessage(req,res,next){
         message:message,
         status:"success"
     });
-    }catch{
-        console.error("Error message");
+    }catch(error){
+        console.error("Error message",error);
     }
 }
 //request to server to talk about selected topic
- const getConversation = function(topic){
+ const getConversation = function(){
  
    const conversation =  getMessage({
       id: topic,
@@ -31,6 +35,7 @@ export default async function getMessage(req,res,next){
    })
  }
 //function to convert speech to text
+/*
 async function textToSpeech(){
  let transcription = await openai.audio.transcriptions.create({
     file: fs.createReadStream(''),
@@ -38,7 +43,7 @@ async function textToSpeech(){
     response_format:"text",
     prompt,
  })
-}
+}*/
 //function to provide feedback on the conversation once it is overn
 //function to measure conversation time
 function measureTime(){
