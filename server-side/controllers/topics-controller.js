@@ -1,14 +1,16 @@
 //import file system library
 import fs from 'fs';
 //request topic
-function selectTopic(req,res){
+function selectTopic(){
     try{
-        
-        
-    }catch{
-
+       let data = fs.readFileSync('./topics.json','utf-8');
+       let jsonData = JSON.parse(data);
+       for(let key in jsonData){
+        console.log(jsonData[key].vocabulary);
+       }
+    }catch(error){
+        console.error('something went wrong', error);
     }   
 }
 
-//teste read file
-
+selectTopic();
