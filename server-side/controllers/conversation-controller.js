@@ -27,14 +27,12 @@ async function getMessage(req,res,next){
 }
 //request to server to talk about selected topic
  const getConversation = function(){
- 
    const conversation =  getMessage({
       id: topic,
       title: jsonData[key].title,
-      prompts: jsonData[key].starterQuestions,
       messages:[{
          role: 'user',
-         message: content
+         content:jsonData[key].systemPrompt
       }]
    })
  }
