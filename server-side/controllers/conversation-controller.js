@@ -1,3 +1,5 @@
+//importing topic controller
+//import selectTopic from ' topics-controller.js'
 //importing openAI server library
 import OpenAI from "openai";
 let openai = new OpenAI({
@@ -28,6 +30,8 @@ async function getMessage(req,res,next){
  
    const conversation =  getMessage({
       id: topic,
+      title: jsonData[key].title,
+      prompts: jsonData[key].starterQuestions,
       messages:[{
          role: 'user',
          message: content

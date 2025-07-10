@@ -6,7 +6,7 @@ function selectTopic(){
        let data = fs.readFileSync('./topics.json','utf-8');
        let jsonData = JSON.parse(data);
        for(let key in jsonData){
-        console.log(jsonData[key].vocabulary);
+        console.log(jsonData[key]);
        }
     }catch(error){
         console.error('something went wrong', error);
@@ -14,3 +14,4 @@ function selectTopic(){
 }
 
 selectTopic();
+
