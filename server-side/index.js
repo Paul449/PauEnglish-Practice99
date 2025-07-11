@@ -1,12 +1,3 @@
-// import file system
-import fs from 'fs';
-//run dotenv
-import 'dotenv/config';
-
-/*small section to test speech to text packages configuration
-
-*/
-
 //import HTTP requests
 import HTTP from 'http';
 

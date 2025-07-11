@@ -1,21 +1,25 @@
+// import dotenv
+import dotenv from 'dotenv';
+dotenv.config();
 //importing topic controller
 //import selectTopic from ' topics-controller.js'
 //importing openAI server library
 import OpenAI from "openai";
 let openai = new OpenAI({
-   apiKey:process.env.OPENAI_KEY
+   apiKey:process.env.OPENAI_API_KEY,
 });
 // response topic, prepare answer with first message on the chat, conducted by model
 async function getMessage(req,res,next){
     try{
         let completion = await openai.chat.completions.create({
-         model: "gpt-4.1",
+         model: "gpt-4",
          messages:[{
             role: "user",
             content:req.body.message || req.body.content,
         }]
     })
     const message = completion.choices[0].message.content
+    console.log(completion.model)
     console.log(message)
     res.status(200).json({
         message:message,
