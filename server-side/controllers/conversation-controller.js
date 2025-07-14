@@ -1,5 +1,5 @@
 //importing topic controller
-import selectTopic from ' /topics-controller.js'
+//import selectTopic from ' /topics-controller.js'
 //importing openAI server library
 import OpenAI from "openai";
 let openai = new OpenAI({
@@ -23,9 +23,16 @@ async function getMessage(req,res,next){
         status:"success"
     });
     }catch(error){
-        console.error("Error message",error);
+        console.error('something unexpectedly occured',error);
+        //server status
+        res.status(500).json({
+         message:'Failed to get AI response',
+         status:'internal server error',
+         error: error.message
+        })
     }
 }
+
 //request to server to talk about selected topic
  const getConversation = async function(){
    const conversation = await getMessage({
