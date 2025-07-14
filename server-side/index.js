@@ -1,6 +1,8 @@
 //import HTTP requests
 import HTTP from 'http';
-
+// import dotenv
+import dotenv from 'dotenv';
+dotenv.config();
 //import express
 import express from 'express';
 //create app
