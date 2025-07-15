@@ -16,6 +16,6 @@ function selectTopic(topic){
         console.error('something went wrong', error);
     }   
 }
-
-selectTopic('Music');
+// call function
+selectTopic('Videogames');
 
