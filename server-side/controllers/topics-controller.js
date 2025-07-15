@@ -7,15 +7,15 @@ function selectTopic(topic){
        let jsonData = JSON.parse(data);
        for(let key in jsonData){
         if(key === topic){
-          topic = jsonData[key];
-          console.log(topic);
+          console.log(jsonData[key]);
+          return jsonData[key];
         }
-        
        }
+       console.log('Topic not found'); 
     }catch(error){
         console.error('something went wrong', error);
     }   
 }
 
-selectTopic('Video Games');
+selectTopic('Music');
 
