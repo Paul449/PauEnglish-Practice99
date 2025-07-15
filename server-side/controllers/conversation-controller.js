@@ -1,7 +1,8 @@
 //importing topic controller
-//import selectTopic from ' /topics-controller.js'
+//import selectTopic from ' ./topics-controller.js'
 //importing openAI server library
 import OpenAI from "openai";
+//instantiating openai client
 let openai = new OpenAI({
    apiKey:process.env.OPENAI_API_KEY,
 });
@@ -12,7 +13,7 @@ async function getMessage(req,res,next){
          model: "gpt-4",
          messages:[{
             role: "user",
-            content:req.body.message || req.body.content,
+            content:req.body.message || jsonData[key].startedQuestions,
         }]
     })
     const message = completion.choices[0].message.content
