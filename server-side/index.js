@@ -1,22 +1,22 @@
-//import HTTP requests
-import HTTP from 'http';
 // import dotenv
 import dotenv from 'dotenv';
 dotenv.config();
 //import express
 import express from 'express';
+//import openai client
+import OpenAI from 'openai';
+//import convesation controller
+//openai client
+let openai = new OpenAI({
+   apiKey: process.env.OPENAI_API_KEY
+})
 //create app
 let app = express();
 //define port number
 let PORT = process.env.PORT || 3000;
 app.use((req,res,next)=>{ //middleware from client to pauEnglish
-   let message = req.params({
-        user:'chatbot',
-        message:req.body,
-        timestamp,
-    })
-    messsage.json();
-    console.log(message);
+  
+    
 });
 
 app.get('/',(req,res)=>{

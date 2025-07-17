@@ -17,5 +17,6 @@ function selectTopic(topic){
     }   
 }
 // call function
-selectTopic('Videogames');
-
+selectTopic();
+//export function to conversation controller
+export default selectTopic;

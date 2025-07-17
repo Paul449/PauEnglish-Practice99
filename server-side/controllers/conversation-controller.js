@@ -1,14 +1,9 @@
 //importing topic controller
-//import selectTopic from ' ./topics-controller.js'
-//importing openAI server library
-import OpenAI from "openai";
-//instantiating openai client
-let openai = new OpenAI({
-   apiKey:process.env.OPENAI_API_KEY,
-});
+import selectTopic from './topics-controller.js'
 // response topic, prepare answer with first message on the chat, conducted by model
 async function getMessage(req,res,next){
     try{
+      selectTopic(topic);
         let completion = await openai.chat.completions.create({
          model: "gpt-4",
          messages:[{
