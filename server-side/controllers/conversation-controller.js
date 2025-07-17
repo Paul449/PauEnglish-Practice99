@@ -40,6 +40,7 @@ async function getMessage(req,res,next){
       }]
    })
  }
+ export default getConversation();
 //function to convert speech to text
 /*
 async function textToSpeech(){

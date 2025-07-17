@@ -5,7 +5,6 @@ dotenv.config();
 import express from 'express';
 //import openai client
 import OpenAI from 'openai';
-//import convesation controller
 //openai client
 let openai = new OpenAI({
    apiKey: process.env.OPENAI_API_KEY
@@ -16,11 +15,11 @@ let app = express();
 let PORT = process.env.PORT || 3000;
 app.use((req,res,next)=>{ //middleware from client to pauEnglish
   
-    
 });
 
 app.get('/',(req,res)=>{
    res.send('hello')
+   
 });
 //test
 app.listen(PORT,()=>{
