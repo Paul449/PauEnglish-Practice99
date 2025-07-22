@@ -1,34 +1,5 @@
 //importing topic controller
-import selectTopic from './topics-controller.js'
 // response topic, prepare answer with first message on the chat, conducted by model
-async function getMessage(req,res,next){
-    try{
-      selectTopic(topic);
-        let completion = await openai.chat.completions.create({
-         model: "gpt-4",
-         messages:[{
-            role: "user",
-            content:req.body.message || jsonData[key].startedQuestions,
-        }]
-    })
-    const message = completion.choices[0].message.content
-    console.log(completion.model)
-    console.log(message)
-    res.status(200).json({
-        message:message,
-        status:"success"
-    });
-    }catch(error){
-        console.error('something unexpectedly occured',error);
-        //server status
-        res.status(500).json({
-         message:'Failed to get AI response',
-         status:'internal server error',
-         error: error.message
-        })
-    }
-}
-
 //request to server to talk about selected topic
  const getConversation = async function(){
    const conversation = await getMessage({
@@ -40,7 +11,7 @@ async function getMessage(req,res,next){
       }]
    })
  }
- export default getConversation();
+ 
 //function to convert speech to text
 /*
 async function textToSpeech(){
@@ -73,4 +44,4 @@ setInterval(() => {
       console.log("Conversation ended", measureTime());
    }, 600000); // up to 10 minutes
 
-//store conversation in database once conversation is over
+
