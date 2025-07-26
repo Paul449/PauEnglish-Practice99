@@ -4,7 +4,13 @@
   "description": "Practice your english skills",
   "main": "server-side/index.js",
   "scripts": {
-    "test": "npm start"
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd server-side && npm run dev",
+      "client": "cd client-side && npm run dev",
+      "build": "cd client-side && npm run build",
+      "install-client": "cd client-side && npm install",
+      "install-server": "cd server-side && npm install",
+      "install-all": "npm install && npm run install-client && npm run install-server"
   },
   "repository": {
     "type": "git",

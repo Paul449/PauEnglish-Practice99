@@ -17,6 +17,6 @@ function selectTopic(topic){
     }   
 }
 // call function
-selectTopic('Music','Art');
+selectTopic('Music');
 //export function to conversation controller
 export default selectTopic;
