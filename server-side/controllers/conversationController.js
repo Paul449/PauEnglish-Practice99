@@ -1,17 +1,17 @@
 //importing topic controller
 import selectTopic from "./topics-controllers"
 // response topic, prepare answer with first message on the chat, conducted by model
-async function getMessage(req,res,next){
+async function getMessage(req,res){
     try{
+        selectTopic();
         let completion = await openai.chat.completions.create({
          model: "gpt-4",
          messages:[{
             role: "user",
-            content:req.body.message || jsonData[key].startedQuestions,
+            content:req.body.message || jsonData[key].starterQuestions
         }]
     })
-    const message = completion.choices[0].message.content
-    console.log(completion.model)
+    const message = completion.choices[0]
     console.log(message)
     res.status(200).json({
         message:message,
@@ -39,18 +39,6 @@ async function getMessage(req,res,next){
    })
  }
  
-//function to convert speech to text
-/*
-async function textToSpeech(){
- let transcription = await openai.audio.transcriptions.create({
-    file: fs.createReadStream(''),
-    model:"gpt-4o-mini-transcribe",
-    response_format:"text",
-    prompt,
- })
-}*/
-//function to provide feedback on the conversation once it is overn
-//function to measure conversation time
 function measureTime(){
    getConversation(topic);
    const startTime = new Date();
@@ -70,3 +58,4 @@ function measureTime(){
 setInterval(() => {
       console.log("Conversation ended", measureTime());
    }, 600000); // up to 10 minutes
+   
