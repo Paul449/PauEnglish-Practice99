@@ -1,8 +1,14 @@
 //importing topic controller
-import selectTopic from "./topics-controllers"
+import selectTopic from "./services/topics-service.js"
 // response topic, prepare answer with first message on the chat, conducted by model
 async function getMessage(req,res){
     try{
+        if(!req.body){
+         return res.status(404).json({
+            message:'request body is required',
+            status:'error'
+         })
+        }
         selectTopic();
         let completion = await openai.chat.completions.create({
          model: "gpt-4",
@@ -11,7 +17,7 @@ async function getMessage(req,res){
             content:req.body.message || jsonData[key].starterQuestions
         }]
     })
-    const message = completion.choices[0]
+    const message = completion.choices[0].message.content;
     console.log(message)
     res.status(200).json({
         message:message,
