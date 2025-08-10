@@ -9,16 +9,25 @@ async function getMessage(req,res){
             status:'error'
          })
         }
+        //calling topic function which takes a topic from json database to generate a message according to the topic chosen
         selectTopic();
         let completion = await openai.chat.completions.create({
          model: "gpt-4",
          messages:[{
             role: "user",
-            content:req.body.message || jsonData[key].starterQuestions
-        }]
+            content:req.body.message || jsonData[key].starterQuestions,
+        }],
+        //controlling maximum length of API response up to 1000 characters
+        max_tokens: 1000,
+        //controlling which words does gpt model is going to use to send me a response
+        temperature: 0.7
     })
-    const message = completion.choices[0].message.content;
-    console.log(message)
+    //throw error in case message does not arrive
+    if(!message){
+      throw new error('no response received from AI');
+    }
+    const message = completion.choices[0]?.message?.content;
+    console.log('AI response',message)
     res.status(200).json({
         message:message,
         status:"success"
@@ -33,7 +42,7 @@ async function getMessage(req,res){
         })
     }
 }
-//request to server to talk about selected topic
+//generate conversation by requesting to openai server about selected topic and generate message
  const getConversation = async function(){
    const conversation = await getMessage({
       id: topic,
