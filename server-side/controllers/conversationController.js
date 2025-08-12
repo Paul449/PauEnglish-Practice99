@@ -1,15 +1,15 @@
 //importing topic controller
 import selectTopic from "./services/topics-service.js"
-// response topic, prepare answer with first message on the chat, conducted by model
-async function getMessage(req,res){
+// response topic called generate message, prepare answer with first message on the chat, conducted by model
+async function genMsg(req,res){
     try{
         if(!req.body){
-         return res.status(404).json({
+         return res.status(400).json({
             message:'request body is required',
             status:'error'
          })
         }
-        //calling topic function which takes a topic from json database to generate a message according to the topic chosen
+        //calling topic function to select appropriate topic to discuss
         selectTopic();
         let completion = await openai.chat.completions.create({
          model: "gpt-4",
@@ -22,11 +22,12 @@ async function getMessage(req,res){
         //controlling which words does gpt model is going to use to send me a response
         temperature: 0.7
     })
-    //throw error in case message does not arrive
-    if(!message){
-      throw new error('no response received from AI');
-    }
+    // get first response from gpt model since response choices are inside of an array
     const message = completion.choices[0]?.message?.content;
+    //throw error in case message does not arrive or not generated
+    if(!message){
+      throw new Error('no response received from AI');
+    }
     console.log('AI response',message)
     res.status(200).json({
         message:message,
@@ -43,27 +44,27 @@ async function getMessage(req,res){
     }
 }
 //generate conversation by requesting to openai server about selected topic and generate message
- const getConversation = async function(){
-   const conversation = await getMessage({
+ const conversation = async function(){
+   const converAI = await genMsg({
       id: topic,
       title: jsonData[key].title,
       messages:[{
          role: 'user',
-         content:jsonData[key].systemPrompt
+         content:jsonData[key].starterQuestions
       }]
    })
  }
  
 function measureTime(){
-   getConversation(topic);
+   conversation(topic);
    const startTime = new Date();
  //conversation more than 10 minutes, finish conversation
- if(getConversation > 600000){
+ if(conversation > 600000){
     const endTime = new Date();
     const timeLimit = endTime - startTime;
     console.log('conversation time limit reached', timeLimit);
     // if conversation is less than time limit, make conversation still going
- } else if(getConversation < 600000){
+ } else if(conversation < 600000){
     console.log("Conversation is still ongoing");
     return;
  } else{
@@ -74,3 +75,4 @@ setInterval(() => {
       console.log("Conversation ended", measureTime());
    }, 600000); // up to 10 minutes
    
+//store conversation in a database
