@@ -56,7 +56,7 @@ async function genMsg(req,res){
    console.log('chatting now',converAI);
    //throw error in case
    if(!converAI){
-       throw new Error('topic not found, please chhose from the options at the menu');
+       throw new Error('topic not found, please choose from the options at the menu');
    }
    res.status(200).json({
       message:converAI,
@@ -91,4 +91,3 @@ setInterval(() => {
       console.log("Conversation ended", measureTime());
    }, 600000); // up to 10 minutes
    
-//store conversation in a database
