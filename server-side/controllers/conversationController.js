@@ -45,14 +45,17 @@ async function genMsg(req,res){
 }
 //generate conversation by requesting to openai server about selected topic and generate message
  const conversation = async function(){
-   const converAI = await genMsg({
-      id: topic,
-      title: jsonData[key].title,
-      messages:[{
-         role: 'user',
-         content:jsonData[key].starterQuestions
-      }]
-   })
+   try{
+   const converAI = await genMsg(
+      //request object of choosen topic
+      { body:{topic:'History'}},
+      //gpt model response after topic choosen in JSON format
+      {status:()=>({json:{}})}
+   )
+   //throw error in case
+   }catch(error){
+
+}
  }
  
 function measureTime(){
