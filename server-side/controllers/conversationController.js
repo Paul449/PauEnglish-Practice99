@@ -52,9 +52,22 @@ async function genMsg(req,res){
       //gpt model response after topic choosen in JSON format
       {status:()=>({json:{}})}
    )
+   //print conversation
+   console.log('chatting now',converAI);
    //throw error in case
+   if(!converAI){
+       throw new Error('topic not found, please chhose from the options at the menu');
+   }
+   res.status(200).json({
+      message:converAI,
+      status:'success'
+   })
    }catch(error){
-
+      console.error('oops something unexpected happened', error);
+      res.status(500).json({
+         message:'internal server error',
+         status:error
+      })
 }
  }
  
