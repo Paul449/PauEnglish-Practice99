@@ -70,7 +70,10 @@ async function genMsg(req,res){
       })
 }
  }
- 
+ //export conversation controller into a route
+module.exports = {genMsg, conversation}
+
+ /*
 function measureTime(){
    conversation(topic);
    const startTime = new Date();
@@ -90,4 +93,4 @@ function measureTime(){
 setInterval(() => {
       console.log("Conversation ended", measureTime());
    }, 600000); // up to 10 minutes
-   
+   */
