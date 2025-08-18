@@ -71,7 +71,7 @@ async function genMsg(req,res){
 }
  }
  //export conversation controller into a route
-module.exports = {genMsg, conversation}
+module.exports = {conversation}
 
  /*
 function measureTime(){
