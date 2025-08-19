@@ -3,7 +3,8 @@ const express = require('express');
 const Router = express.Router();
 //import conversation function to define chat route
 import conversation from '../../controllers/conversationController';
-//
+//display conversation
 Router.get('/chat', conversation);
+//create conversation
 //export chat route
 export default Router;
