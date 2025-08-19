@@ -6,9 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "start:backend": "node index.js",
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
