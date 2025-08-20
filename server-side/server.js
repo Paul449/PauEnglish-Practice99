@@ -1,3 +1,6 @@
+//importing chat and topic routes
+import conversationRoute from './routes/index'
+import topicRoute from './routes/index'
 // import dotenv
 import dotenv from 'dotenv';
 dotenv.config();
