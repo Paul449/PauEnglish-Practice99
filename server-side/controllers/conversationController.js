@@ -1,3 +1,5 @@
+// import mongoose to connect with english app database
+import mongoose from '../config/connection.js';
 //importing topic controller
 import selectTopic from "./services/topics-service.js"
 // response topic called generate message, prepare answer with first message on the chat, conducted by model
@@ -44,8 +46,8 @@ async function genMsg(req,res){
     }
 }
 //generate conversation by requesting to openai server about selected topic and generate message
-
- const conversation = async function(){
+//POST method
+ const createConversation = async function(){
    try{
    const converAI = await genMsg(
       //request object of choosen topic
@@ -71,27 +73,16 @@ async function genMsg(req,res){
       })
 }
  }
- //export conversation controller into a route
-module.exports = {conversation}
-
- /*
-function measureTime(){
-   conversation(topic);
-   const startTime = new Date();
- //conversation more than 10 minutes, finish conversation
- if(conversation > 600000){
-    const endTime = new Date();
-    const timeLimit = endTime - startTime;
-    console.log('conversation time limit reached', timeLimit);
-    // if conversation is less than time limit, make conversation still going
- } else if(conversation < 600000){
-    console.log("Conversation is still ongoing");
-    return;
- } else{
-      return;
+ //save conversation on the mongoDB database
+ function saveConversation(){
+    //insert one
  }
-}
-setInterval(() => {
-      console.log("Conversation ended", measureTime());
-   }, 600000); // up to 10 minutes
-   */
+ //retrieve conversation from database, mongodb
+ function getConversation(){
+
+ }
+ //delete conversation from mongoDB database
+ function deleteConversation(){
+
+ }
+ //export conversation controller into a route
