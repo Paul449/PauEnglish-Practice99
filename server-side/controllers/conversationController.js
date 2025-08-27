@@ -4,7 +4,7 @@ import mongoose from '../config/connection.js';
 import selectTopic from "./services/topics-service.js"
 //generate conversation by requesting to openai server about selected topic and generate message
 //POST method
- const createConversation = async function(topic){
+ const createConversation = async function(req,res){
   try{
   const conversation = await openai.chat.completions.create({
    model: 'gpt-4',
@@ -12,6 +12,7 @@ import selectTopic from "./services/topics-service.js"
    message:[
    {
       role:'assistant',
+      content:'you are a knowledgeable history teacher'
    },
    {
       role:'user',

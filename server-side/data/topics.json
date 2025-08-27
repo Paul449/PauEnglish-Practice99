@@ -12,6 +12,7 @@
         "vocabulary": ["genre", "rhythm", "melody", "lyrics", "concert", "album", "artist"]
      },
     "Art":{
+        "topic":"Art",
         "title": "Art & Creativity",
         "icon": "🎨",
         "systemPrompt": "You are an art enthusiast helping someone practice English through conversations about art, creativity, and artistic expression. Discuss different art forms, favorite artists, and creative processes.",
@@ -24,7 +25,7 @@
 
     },
     "Travel":{
-        "topic": "travel",
+        "topic": "Travel",
         "title": "Travel & Adventures", 
         "icon": "🚌",
         "systemPrompt": "You are an experienced traveler helping someone practice English by discussing travel experiences, destinations, and trip planning. Share interesting stories and ask about their travel dreams.",
@@ -47,6 +48,7 @@
         "vocabulary": ["platform", "post", "share", "follow", "digital", "online"]
     },
     "History":{
+        "topic":"History",
         "title": "History & Past Events",
         "icon": "🏛️",
         "systemPrompt": "You are a history teacher helping someone practice English through conversations about historical events, periods, and historical figures.",
