@@ -1,5 +1,6 @@
 //import file system library
 import fs from 'fs';
+//http
 //request topic
 async function selectTopic(topic){
     try{
@@ -11,7 +12,7 @@ async function selectTopic(topic){
           return jsonData[key];
         }
        }
-       console.log('Topic not found'); 
+       console.log('topic found:', topic)
     }catch(error){
         console.error('something went wrong', error);
     }   
