@@ -5,7 +5,13 @@ import selectTopic from "./services/topics-service.js"
 //generate conversation by requesting to openai server about selected topic and generate message
 //POST method
  const createConversation = async function(){
-  
+  try{
+
+
+  }catch(error){
+
+   
+  }
  }
  //save conversation on the mongoDB database
  function saveConversation(){
