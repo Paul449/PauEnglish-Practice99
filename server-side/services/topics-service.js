@@ -2,7 +2,7 @@
 import fs from 'fs';
 //http
 //request topic
-async function selectTopic(topic){
+export default async function selectTopic(topic){
     try{
        let data = await fs.readFileSync('../data/topics.json','utf-8');
        let jsonData = JSON.parse(data);
@@ -20,4 +20,4 @@ async function selectTopic(topic){
 // call function
 selectTopic('Music');
 //export function to conversation controller
-export default selectTopic;
+
