@@ -1,15 +1,15 @@
-//importing chat and topic routes
-import conversationRoute from './routes/index'
-import topicRoute from './routes/index'
 // import dotenv
 import dotenv from 'dotenv';
 dotenv.config();
+//importing chat and topic routes
+//import conversationRoute from './routes/index'
+//import topicRoute from './routes/index'
 //import express
 import express from 'express';
 //import openai client
 import OpenAI from 'openai';
 //openai client
-let openai = new OpenAI({
+export const openai = new OpenAI({
    apiKey: process.env.OPENAI_API_KEY
 })
 //create app

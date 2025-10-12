@@ -1,5 +1,7 @@
 // import mongoose to connect with english app database
 //import mongoose from '../config/connection.js';
+//import openai from server
+import { openai } from '../server.js';
 //importing topic controller
 import selectTopic from '../services/topics-service.js'
 //generate conversation by requesting to openai server about selected topic and generate message
