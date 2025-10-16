@@ -1,7 +1,7 @@
 //importing topic controller
 import selectTopic from '../services/topics-service.js'
 import openai from '../config/openai.js'
-
+import conversation from '../models/converschema.js'
 //generate conversation by requesting to openai server about selected topic and generate message
 //POST method
  const createConversation = async function(req,res){
@@ -46,16 +46,45 @@ import openai from '../config/openai.js'
 
  //save conversation on the mongoDB database
  
- function saveConversation(converID){
+ async function saveConversation(converID){
     //insert one
+    try {
+      const newConversation = await conversation.create({
+         _id: converID,
+         title: 'Sample Conversation Title',
+         time: Date.now(),
+         feedback:{score: 8, comment: 'Great conversation! Very engaging and informative.'},
+         comment: 'This is a sample comment for the conversation.'
+      })    
+    } catch (error) {
+      console.error('Error saving conversation:', error);
+      throw new Error('Failed to save conversation');
+    }
  }
  //retrieve conversation from database, mongodb
- function getConversation(){
-
+ async function getConversation(){
+   try {
+      //identify conversation by ID
+      const conversationID = await conversation.find({_id: converID});
+      //if conversation exists, return conversation
+      if(conversationID){
+         return conversationID;
+      } else {
+         throw new Error('Conversation not found');
+      }
+      
+   } catch (error) {
+      console.error('Error retrieving conversation:', error);
+      throw new Error('Failed to retrieve conversation');
+   }
  }
  //delete conversation from mongoDB database
  function deleteConversation(){
-
+   try {
+      
+   } catch (error) {
+      
+   }
  }
  //export conversation controller into a route
 module.exports = {
