@@ -43,4 +43,4 @@ const converschema = new mongoose.Schema({
 
 })
 const Conversation = mongoose.model('conversation', converschema);
-module.export = Conversation;
+export default Conversation;

@@ -94,9 +94,9 @@ import conversation from '../models/converschema.js'
    }
  }
  //export conversation controller into a route
-module.exports = {
-   createConversation,
-   saveConversation,
-   getConversation,
-   deleteConversation
+export {
+    createConversation,
+    saveConversation,
+    getConversation,
+    deleteConversation
 };
