@@ -81,9 +81,16 @@ import conversation from '../models/converschema.js'
  //delete conversation from mongoDB database
  function deleteConversation(){
    try {
-      
+    //delete conversation by ID
+      const deleteConversation = conversation.deleteOne({_id: converID});
+      if(deleteConversation){
+         return 'Conversation deleted successfully';
+      } else {
+         throw new Error('Conversation not found');
+      }
    } catch (error) {
-      
+    //error deleting conversation
+      console.error('Error deleting conversation, please try again later:', error);
    }
  }
  //export conversation controller into a route
