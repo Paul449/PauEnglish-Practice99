@@ -1,5 +1,5 @@
 // import conversation and topic routes
-const conversationRoute = require('./api/chat-route');
-const topicRoute = require('./api/topic-route');
+import conversationRoute from './api/chat-route.js';
+import topicRoute from './api/topic-route.js';
 //export routes to server.js
-module.export = {conversationRoute, topicRoute};
+export default {conversationRoute, topicRoute};
